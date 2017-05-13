@@ -1,0 +1,953 @@
+﻿Log file open, 05/09/17 21:52:40
+LogInit:Display: Running engine for game: Shooter
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(959776819) SRandInit(959776819).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.132786
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3416026
+LogInit: Engine Version: 4.15.2-3416026+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May  1 2017 13:11:28
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: D:/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.05.10-01.52.42:629][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.10-01.52.42:629][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.05.10-01.52.42:658][  0]LogInit: Computer: DESKTOP-44SKKF1
+[2017.05.10-01.52.42:658][  0]LogInit: User: 1
+[2017.05.10-01.52.42:658][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.05.10-01.52.42:658][  0]LogInit: High frequency timer resolution =1.754519 MHz
+[2017.05.10-01.52.42:658][  0]LogMemory: Memory total: Physical=7.3GB (8GB approx)
+[2017.05.10-01.52.42:658][  0]LogMemory: Platform Memory Stats for Windows
+[2017.05.10-01.52.42:658][  0]LogMemory: Process Physical Memory: 262.88 MB used, 262.88 MB peak
+[2017.05.10-01.52.42:658][  0]LogMemory: Process Virtual Memory: 262.55 MB used, 262.55 MB peak
+[2017.05.10-01.52.42:658][  0]LogMemory: Physical Memory: 2520.89 MB used,  4964.45 MB free, 7485.34 MB total
+[2017.05.10-01.52.42:658][  0]LogMemory: Virtual Memory: 643.93 MB used,  4964.45 MB free, 134217728.00 MB total
+[2017.05.10-01.52.42:838][  0]LogInit: Overriding culture en with editor configuration.
+[2017.05.10-01.52.44:163][  0]LogD3D11RHI: D3D11 adapters:
+[2017.05.10-01.52.44:212][  0]LogD3D11RHI:    0. 'AMD Radeon R6 Graphics' (Feature Level 11_0)
+[2017.05.10-01.52.44:212][  0]LogD3D11RHI:       487/0/3742 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.05.10-01.52.44:215][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.05.10-01.52.44:215][  0]LogD3D11RHI:       0/0/3742 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.05.10-01.52.44:215][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.05.10-01.52.44:233][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.05.10-01.52.44:233][  0]LogD3D11RHI:     GPU DeviceId: 0x9874 (for the marketing name, search the web for "GPU Device Id")
+[2017.05.10-01.52.44:233][  0]LogWindows: EnumDisplayDevices:
+[2017.05.10-01.52.44:233][  0]LogWindows:    0. 'AMD Radeon R6 Graphics' (P:1 D:1)
+[2017.05.10-01.52.44:234][  0]LogWindows:    1. 'AMD Radeon R6 Graphics' (P:0 D:0)
+[2017.05.10-01.52.44:236][  0]LogWindows:    2. 'AMD Radeon R6 Graphics' (P:0 D:0)
+[2017.05.10-01.52.44:236][  0]LogWindows: DebugString: FoundDriverCount:3 
+[2017.05.10-01.52.44:236][  0]LogD3D11RHI:     Adapter Name: AMD Radeon R6 Graphics
+[2017.05.10-01.52.44:236][  0]LogD3D11RHI:   Driver Version: Crimson 16.6 (internal:21.19.137.514, unified:21.19.137.514)
+[2017.05.10-01.52.44:236][  0]LogD3D11RHI:      Driver Date: 11-21-2016
+[2017.05.10-01.52.44:236][  0]LogRHI: Texture pool is 340 MB (70% of 487 MB)
+[2017.05.10-01.52.44:322][  0]LogD3D11RHI: Async texture creation enabled
+[2017.05.10-01.52.44:347][  0]LogD3D11RHI: GPU Timing Frequency: 100.000000 (Debug: 2 1)
+[2017.05.10-01.52.44:350][  0]LogShaderCompilers: Guid format shader working directory is 3 characters bigger than the processId version (C:/Users/lenovo/Documents/UnrealPro/Shooter/Intermediate/Shaders/WorkingDirectory/58868/).
+[2017.05.10-01.52.44:350][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/lenovo/AppData/Local/Temp/UnrealShaderWorkingDir/554ABD394270EEF17BCE1B97C293922F/'.
+[2017.05.10-01.52.44:350][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.05.10-01.52.47:313][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.05.10-01.52.47:481][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.05.10-01.52.47:611][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.05.10-01.52.47:732][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.05.10-01.52.47:860][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.05.10-01.52.47:990][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.05.10-01.52.48:122][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.05.10-01.52.48:246][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.05.10-01.52.48:346][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.05.10-01.52.48:468][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.05.10-01.52.48:610][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.05.10-01.52.48:740][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.05.10-01.52.48:859][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.05.10-01.52.48:993][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.05.10-01.52.49:115][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.05.10-01.52.49:360][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.05.10-01.52.49:360][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.05.10-01.52.49:449][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.05.10-01.52.49:650][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.05.10-01.52.49:736][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.05.10-01.52.49:861][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.05.10-01.52.49:987][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.05.10-01.52.50:136][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.05.10-01.52.50:266][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.05.10-01.52.50:266][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.05.10-01.52.51:255][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.05.10-01.52.51:405][  0]LogDerivedDataCache: Loaded boot cache 0.15s 50MB C:/Users/lenovo/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.10-01.52.51:405][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/lenovo/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.05.10-01.52.51:405][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/lenovo/Documents/UnrealPro/Shooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.05.10-01.52.51:405][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.05.10-01.52.51:406][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/lenovo/Documents/UnrealPro/Shooter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.05.10-01.52.51:406][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.05.10-01.52.51:445][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.05.10-01.52.51:461][  0]LogDerivedDataCache: Using Local data cache path C:/Users/lenovo/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.05.10-01.52.51:485][  0]LogSlate: Using Freetype 2.6.0
+[2017.05.10-01.52.51:485][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.10-01.52.51:485][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.10-01.52.52:227][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.10-01.52.52:236][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.05.10-01.52.52:727][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.05.10-01.52.52:822][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.05.10-01.52.52:927][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.05.10-01.52.52:927][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.05.10-01.52.52:927][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.05.10-01.52.54:273][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: shooter, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 1589670086
+[2017.05.10-01.52.54:350][  0]LogAssetRegistry: FAssetRegistry took 0.0223 seconds to start up
+[2017.05.10-01.52.54:459][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.050578 seconds
+[2017.05.10-01.52.54:473][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.05.10-01.52.54:474][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.05.10-01.52.54:474][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.05.10-01.52.54:655][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.05.10-01.52.58:320][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.05.10-01.52.58:401][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.05.10-01.52.59:449][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.05.10-01.53.00:326][  0]SourceControl: Info Source control is disabled
+[2017.05.10-01.53.00:329][  0]SourceControl: Info Source control is disabled
+[2017.05.10-01.53.00:436][  0]SourceControl: Info Source control is disabled
+[2017.05.10-01.53.00:538][  0]SourceControl: Info Source control is disabled
+[2017.05.10-01.53.03:438][  0]LogEngine: Initializing Engine...
+[2017.05.10-01.53.03:441][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.05.10-01.53.03:733][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.05.10-01.53.03:733][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.05.10-01.53.04:038][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.05.10-01.53.04:073][  0]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.10-01.53.05:249][  0]LogInit: FAudioDevice initialized.
+[2017.05.10-01.53.05:333][  0]LogDerivedDataCache: Saved boot cache 0.08s 50MB C:/Users/lenovo/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.10-01.53.05:365][  0]LogInit: Texture streaming: Enabled
+[2017.05.10-01.53.05:605][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.05.10-01.53.05:820][  0]LogInit: Transaction tracking system initialized
+[2017.05.10-01.53.06:633][  0]BlueprintLog: New page: Editor Load
+[2017.05.10-01.53.08:890][  0]LocalizationService: Info Localization service is disabled
+[2017.05.10-01.53.10:840][  0]LogConsoleResponse:Display: 
+[2017.05.10-01.53.11:147][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.05.10-01.53.11:148][  0]LogCook:Display: Mobile HDR setting 1
+[2017.05.10-01.53.11:333][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/' took 0.02s
+[2017.05.10-01.53.13:706][  0]SourceControl: Info Source control is disabled
+[2017.05.10-01.53.13:707][  0]Cmd: MAP LOAD FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.10-01.53.13:708][  0]LightingResults: New page: Lighting Build
+[2017.05.10-01.53.13:803][  0]MapCheck: New page: Map Check
+[2017.05.10-01.53.13:803][  0]LightingResults: New page: Lighting Build
+[2017.05.10-01.53.15:280][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.10-01.53.15:352][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.10-01.53.15:354][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.10-01.53.15:472][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 118.106ms to complete.
+[2017.05.10-01.53.15:472][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 1.766
+[2017.05.10-01.53.15:900][  0]LogCollectionManager: Loaded 0 collections in 0.007281 seconds
+[2017.05.10-01.53.16:085][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Collections/' took 0.01s
+[2017.05.10-01.53.16:085][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Developers/1/Collections/' took 0.01s
+[2017.05.10-01.53.16:085][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Collections/' took 0.02s
+[2017.05.10-01.53.16:085][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2017.05.10-01.53.16:117][  0]LogContentBrowser: Native class hierarchy populated in 0.0311 seconds. Added 2245 classes and 453 folders.
+[2017.05.10-01.53.16:307][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2017.05.10-01.53.16:433][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0018 seconds. Added 0 classes and 0 folders.
+[2017.05.10-01.53.16:557][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0015 seconds. Added 1 classes and 2 folders.
+[2017.05.10-01.53.16:694][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.05.10-01.53.16:717][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.05.10-01.53.16:878][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0020 seconds. Added 1 classes and 2 folders.
+[2017.05.10-01.53.16:878][  0]LogLoad: (Engine Initialization) Total time: 38.46 seconds
+[2017.05.10-01.53.16:878][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.52 seconds
+[2017.05.10-01.53.16:878][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.05.10-01.53.16:878][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.05.10-01.53.17:219][  0]LogOcInput: OculusInput pre-init called
+[2017.05.10-01.53.17:251][  0]LogContentStreaming: Texture pool size now 400 MB
+[2017.05.10-01.53.17:260][  0]LogSlate: Took 0.000394 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.10-01.53.17:320][  0]LogSlate: Took 0.000806 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.05.10-01.53.17:335][  0]LogSlate: Took 0.000579 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.05.10-01.53.17:643][  0]LogSlate: Took 0.000633 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.10-01.53.17:791][  1]LogRenderer: Reallocating scene render targets to support 816x396 NumSamples 1 (Frame:2).
+[2017.05.10-01.53.17:791][  1]LogHttp:Warning: 0000023D937DBD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.10-01.53.17:791][  1]LogHttp:Warning: 0000023D937DBD00: libcurl info message cache 0 (Could not resolve host: cdn.unrealengine.com)
+[2017.05.10-01.53.17:791][  1]LogHttp:Warning: 0000023D937DBD00: libcurl info message cache 1 (Closing connection 0)
+[2017.05.10-01.53.17:937][  2]LogHttp:Warning: 0000023D93BAB400: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.10-01.53.17:937][  2]LogHttp:Warning: 0000023D93BAB400: libcurl info message cache 0 (Could not resolve host: cdn.unrealengine.com)
+[2017.05.10-01.53.17:937][  2]LogHttp:Warning: 0000023D93BAB400: libcurl info message cache 1 (Closing connection 1)
+[2017.05.10-01.53.18:262][  3]LogHttp:Warning: 0000023D9C5C1D80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.10-01.53.18:262][  3]LogHttp:Warning: 0000023D9C5C1D80: libcurl info message cache 0 (Could not resolve host: cdn.unrealengine.com)
+[2017.05.10-01.53.18:262][  3]LogHttp:Warning: 0000023D9C5C1D80: libcurl info message cache 1 (Closing connection 2)
+[2017.05.10-01.53.19:184][  5]LogAssetRegistry: Asset discovery search completed in 24.8565 seconds
+[2017.05.10-01.53.19:184][  5]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000018 seconds (found 0 objects)
+[2017.05.10-01.53.19:184][  5]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000055 seconds (updated 0 objects)
+[2017.05.10-01.54.17:457][180]LogHttp:Warning: 0000023D9CD79F00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.10-01.54.17:457][180]LogHttp:Warning: 0000023D9CD79F00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.10-01.54.17:457][180]LogHttp:Warning: 0000023D9CD79F00: libcurl info message cache 1 (Closing connection 3)
+[2017.05.10-01.55.10:827][ 86]LogSlate: Took 0.000498 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.10-01.55.10:884][ 86]LogAssetTools:Warning: Failed to import 'D:\Epic Games\UE_4.15\Templates\TP_ThirdPerson\Content\ThirdPersonCPP\Blueprints\ThirdPersonCharacter.uasset'. Unknown extension 'uasset'.
+[2017.05.10-01.55.10:886][ 86]LogSlate: Took 0.000381 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.10-01.55.17:153][353]LogHttp:Warning: 0000023DA3D2F100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.10-01.55.17:153][353]LogHttp:Warning: 0000023DA3D2F100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.10-01.55.17:153][353]LogHttp:Warning: 0000023DA3D2F100: libcurl info message cache 1 (Closing connection 4)
+[2017.05.10-01.56.17:244][248]LogHttp:Warning: 0000023DD3AF8100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.10-01.56.17:244][248]LogHttp:Warning: 0000023DD3AF8100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.10-01.56.17:244][248]LogHttp:Warning: 0000023DD3AF8100: libcurl info message cache 1 (Closing connection 5)
+[2017.05.10-01.57.27:129][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_ThirdPerson_AnimBP_C_0' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:129][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_ThirdPerson_AnimBP_C_1' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:129][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_TransitionResult_EB26C4B44509776D1C9FA6991E047C32' or package '/Game/Mannequin/Animations/ThirdPerson_AnimBP'.
+[2017.05.10-01.57.27:129][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'BlueprintUpdateAnimation' or package '/Game/Mannequin/Animations/ThirdPerson_AnimBP'.
+[2017.05.10-01.57.27:129][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_BlendSpacePlayer_02DCCD344B15638E3A268A84A40F216E' or package '/Game/Mannequin/Animations/ThirdPerson_AnimBP'.
+[2017.05.10-01.57.27:129][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_TransitionResult_175FFF54400CA0EC412B7083B0989D7E' or package '/Game/Mannequin/Animations/ThirdPerson_AnimBP'.
+[2017.05.10-01.57.27:130][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_TransitionResult_EA982A1F4C5300ED41A13CAD26E05A19' or package '/Game/Mannequin/Animations/ThirdPerson_AnimBP'.
+[2017.05.10-01.57.27:130][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_TransitionResult_F867B5374C7EFB9ED9010FA7431019DF' or package '/Game/Mannequin/Animations/ThirdPerson_AnimBP'.
+[2017.05.10-01.57.27:130][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'Default__DEADCLASS_ThirdPerson_AnimBP_C_1' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:130][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'Speed' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:130][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'IsInAir?' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:130][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_StateMachine_4DC365404548467BD671AEB325E4717D' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:130][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_StateResult_7618737141064086BB77CBB9D5CD2D59' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:131][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_BlendSpacePlayer_02DCCD344B15638E3A268A84A40F216E' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:131][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_StateResult_046F1C2548286DB7421A07BCB8B9830E' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:131][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_SequencePlayer_42CC18D944758414A1674994127217DE' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:131][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_StateResult_1EBEFD1E44C9887ACE06AC8147E389E1' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:131][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_SequencePlayer_7F3D9C864B693C7A42B6BE9C6E030836' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:131][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_StateResult_297D99FF44D47FD485B4F89D8011EE52' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:131][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_SequencePlayer_A0CF690444C363144EC28B95406387AA' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:131][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_TransitionResult_EA982A1F4C5300ED41A13CAD26E05A19' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:132][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_TransitionResult_F867B5374C7EFB9ED9010FA7431019DF' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:132][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_TransitionResult_EB26C4B44509776D1C9FA6991E047C32' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:132][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_TransitionResult_175FFF54400CA0EC412B7083B0989D7E' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:132][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimGraphNode_Root_6245415D43FCCBD818C7DD8DCFD4FBC8' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:132][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'ExecuteUbergraph_ThirdPerson_AnimBP' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:132][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'BlueprintUpdateAnimation' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:133][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_TransitionResult_EB26C4B44509776D1C9FA6991E047C32' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:133][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_BlendSpacePlayer_02DCCD344B15638E3A268A84A40F216E' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:133][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_TransitionResult_175FFF54400CA0EC412B7083B0989D7E' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:133][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_TransitionResult_EA982A1F4C5300ED41A13CAD26E05A19' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:133][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'EvaluateGraphExposedInputs_ExecuteUbergraph_ThirdPerson_AnimBP_AnimGraphNode_TransitionResult_F867B5374C7EFB9ED9010FA7431019DF' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:133][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'UberGraphFrame' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:134][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'Default__DEADCLASS_ThirdPerson_AnimBP_C_0' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:134][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'Default__REINST_SKEL_ThirdPerson_AnimBP_C_5' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:135][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_ThirdPerson_AnimBP_C_5' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:135][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'Default__REINST_ThirdPerson_AnimBP_C_4' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:136][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'ThirdPerson_AnimBP_C_0' or package '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap'.
+[2017.05.10-01.57.27:137][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'SkeletalMeshComponent0' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:137][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'ThirdPerson_AnimBP_C_0' or package '/Engine/Transient'.
+[2017.05.10-01.57.27:137][845]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_ThirdPerson_AnimBP_C_4' or package '/Engine/Transient'.
+[2017.05.10-01.57.28:689][845]LogSlate: Took 0.000490 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.10-01.57.29:218][848]LogHttp:Warning: 0000023D8B60C400: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.10-01.57.29:218][848]LogHttp:Warning: 0000023D8B60C400: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.10-01.57.29:218][848]LogHttp:Warning: 0000023D8B60C400: libcurl info message cache 1 (Closing connection 6)
+[2017.05.10-01.57.37:201][228]LogSavePackage: Save=333.70ms
+[2017.05.10-01.57.37:201][228]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/ThirdPersonExampleMap59472ECD4ED1BA18ABAF0BAA7CFF603C.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2017.05.10-01.57.37:218][228]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2017.05.10-01.57.37:974][228]LogSavePackage: Save=589.89ms
+[2017.05.10-01.57.37:974][228]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/ThirdPersonExampleMap_BuiltDataE0CFFD5A4874A68871DDB0B2D58218D2.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2017.05.10-01.57.37:982][228]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset
+[2017.05.10-01.58.08:912][745]LogAssetTools:Warning: Failed to import 'D:\Epic Games\UE_4.15\Templates\TemplateResources\Standard\Mannequin\Content\Animations\ThirdPerson_Jump.uasset'. Unknown extension 'uasset'.
+[2017.05.10-01.58.36:750][551]LogHttp:Warning: 0000023D88046980: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.10-01.58.36:750][551]LogHttp:Warning: 0000023D88046980: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.10-01.58.36:750][551]LogHttp:Warning: 0000023D88046980: libcurl info message cache 1 (Closing connection 7)
+[2017.05.10-02.02.58:401][100]LogHttp:Warning: 0000023D880D7E80: request failed, libcurl error: 35 (SSL connect error)
+[2017.05.10-02.02.58:401][100]LogHttp:Warning: 0000023D880D7E80: libcurl info message cache 0 (  Trying 107.21.20.6...)
+[2017.05.10-02.02.58:401][100]LogHttp:Warning: 0000023D880D7E80: libcurl info message cache 1 (Connected to datarouter.ol.epicgames.com (107.21.20.6) port 443 (#8))
+[2017.05.10-02.02.58:401][100]LogHttp:Warning: 0000023D880D7E80: libcurl info message cache 2 (ALPN, offering http/1.1)
+[2017.05.10-02.02.58:401][100]LogHttp:Warning: 0000023D880D7E80: libcurl info message cache 3 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7E80: libcurl info message cache 4 (TLSv1.2 (OUT), TLS header, Certificate Status (22):)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7E80: libcurl info message cache 5 (TLSv1.2 (OUT), TLS handshake, Client hello (1):)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7E80: libcurl info message cache 6 (Unknown SSL protocol error in connection to datarouter.ol.epicgames.com:443 )
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7E80: libcurl info message cache 7 (Closing connection 8)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: request failed, libcurl error: 7 (Couldn't connect to server)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x23d9378bfe8 [serially])
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 1 (Hostname in DNS cache was stale, zapped)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 2 (  Trying 107.21.20.6...)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 3 (connect to 107.21.20.6 port 443 failed: Timed out)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 4 (  Trying 34.198.55.107...)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 5 (connect to 34.198.55.107 port 443 failed: Connection was aborted)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 6 (  Trying 54.164.193.73...)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 7 (connect to 54.164.193.73 port 443 failed: Host unreachable)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 8 (  Trying 54.165.158.243...)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 9 (connect to 54.165.158.243 port 443 failed: Host unreachable)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 10 (Failed to connect to datarouter.ol.epicgames.com port 443: Host unreachable)
+[2017.05.10-02.02.58:402][100]LogHttp:Warning: 0000023D880D7880: libcurl info message cache 11 (Closing connection 9)
+[2017.05.10-02.03.20:247][898]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.10-02.03.20:268][898]LightingResults: New page: Lighting Build
+[2017.05.10-02.03.20:271][898]LoadErrors: New page: Loading map: Template_Default.umap
+[2017.05.10-02.03.20:274][898]MapCheck: New page: Map Check
+[2017.05.10-02.03.20:274][898]LightingResults: New page: Lighting Build
+[2017.05.10-02.03.20:408][898]LogAIModule: Creating AISystem for world Untitled_1
+[2017.05.10-02.03.20:415][898]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.05.10-02.03.20:424][898]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.10-02.03.20:443][898]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.10-02.03.20:573][898]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 129.534ms to complete.
+[2017.05.10-02.03.20:573][898]LogFileHelpers: Loading map 'Template_Default' took 0.335
+[2017.05.10-02.03.28:389][380]LogUProjectInfo: Found projects:
+[2017.05.10-02.03.30:795][498]Cmd: CLOSE_SLATE_MAINFRAME
+[2017.05.10-02.03.31:089][498]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.10-02.03.31:409][499]Cmd: QUIT_EDITOR
+[2017.05.10-02.03.31:580][499]LogExit: Preparing to exit.
+[2017.05.10-02.03.31:818][499]LogExit: Editor shut down
+[2017.05.10-02.03.31:819][499]LogExit: Transaction tracking system shut down
+[2017.05.10-02.03.31:977][499]LogObj: Freed 0b from 0 cluster array pools.
+[2017.05.10-02.03.31:977][499]LogExit: Object subsystem successfully closed.
+[2017.05.10-02.03.32:003][499]LogD3D11RHI: Shutdown
+[2017.05.10-02.03.32:003][499]LogD3D11RHI: CleanupD3DDevice
+[2017.05.10-02.03.32:405][499]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.05.10-02.03.32:428][499]LogModuleManager: Shutting down and abandoning module NewLevelDialog (500)
+[2017.05.10-02.03.32:428][499]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.05.10-02.03.32:428][499]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.05.10-02.03.32:428][499]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.05.10-02.03.32:428][499]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.05.10-02.03.32:429][499]LogDirectoryWatcher: A directory notification for 'D:/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.05.10-02.03.32:431][499]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.05.10-02.03.32:431][499]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.05.10-02.03.32:431][499]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.05.10-02.03.32:431][499]LogDirectoryWatcher: A directory notification for 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Collections/' was aborted.
+[2017.05.10-02.03.32:437][499]LogDirectoryWatcher: A directory notification for 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Developers/1/Collections/' was aborted.
+[2017.05.10-02.03.32:437][499]LogDirectoryWatcher: A directory notification for 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Collections/' was aborted.
+[2017.05.10-02.03.32:437][499]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.05.10-02.03.32:437][499]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.05.10-02.03.32:437][499]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.05.10-02.03.32:437][499]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.05.10-02.03.32:438][499]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.05.10-02.03.32:439][499]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.05.10-02.03.33:206][499]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.05.10-02.03.33:207][499]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.05.10-02.03.33:208][499]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.05.10-02.03.33:208][499]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.05.10-02.03.33:208][499]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.05.10-02.03.33:208][499]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.05.10-02.03.33:263][499]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.05.10-02.03.33:263][499]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.05.10-02.03.33:263][499]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.05.10-02.03.33:263][499]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.05.10-02.03.33:263][499]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.05.10-02.03.33:263][499]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.05.10-02.03.33:263][499]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.05.10-02.03.33:263][499]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.05.10-02.03.33:263][499]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.05.10-02.03.33:264][499]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.05.10-02.03.33:265][499]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.05.10-02.03.33:338][499]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.05.10-02.03.33:339][499]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.05.10-02.03.33:341][499]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.05.10-02.03.33:341][499]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.05.10-02.03.33:341][499]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.05.10-02.03.33:342][499]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.05.10-02.03.33:343][499]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.05.10-02.03.33:343][499]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.05.10-02.03.33:343][499]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.05.10-02.03.33:343][499]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.05.10-02.03.33:445][499]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.05.10-02.03.33:546][499]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.05.10-02.03.33:547][499]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.05.10-02.03.33:547][499]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.05.10-02.03.33:547][499]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.05.10-02.03.33:547][499]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.05.10-02.03.33:547][499]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.05.10-02.03.33:547][499]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.05.10-02.03.33:547][499]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.05.10-02.03.33:547][499]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.05.10-02.03.33:552][499]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.05.10-02.03.33:552][499]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.05.10-02.03.33:552][499]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.05.10-02.03.33:552][499]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.05.10-02.03.33:552][499]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.05.10-02.03.33:552][499]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.05.10-02.03.33:806][499]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.05.10-02.03.33:806][499]LogDirectoryWatcher: A directory notification for 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/' was aborted.
+[2017.05.10-02.03.33:806][499]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.05.10-02.03.33:807][499]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.05.10-02.03.33:808][499]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.05.10-02.03.33:808][499]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.05.10-02.03.33:808][499]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.05.10-02.03.33:808][499]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.05.10-02.03.33:808][499]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.05.10-02.03.33:808][499]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.05.10-02.03.33:809][499]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.05.10-02.03.33:809][499]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.05.10-02.03.33:818][499]LogDerivedDataCache: Shutdown
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.05.10-02.03.33:818][499]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.05.10-02.03.33:819][499]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.05.10-02.03.33:819][499]LogOnline:Display: Unloading online subsystem: NULL
+[2017.05.10-02.03.33:820][499]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.05.10-02.03.33:820][499]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.05.10-02.03.33:820][499]LogHttp:Display: Http module shutting down, but needs to wait on 2 outstanding Http requests:
+[2017.05.10-02.03.33:820][499]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B186951E9-45A0-29CE-BDAA-4192E3B2CC8B%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.2-3416026%2B%2B%2BUE4%2BRelease-4.15&UserID=fc0ab5e14c29e395dee894bb26e0e4c8%7Ccbf7e4b3a2fa4a3483ff9ae11ae13430%7C0a898179-1db4-4ad6-89ab-2983492e6393&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.10-02.03.33:820][499]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B186951E9-45A0-29CE-BDAA-4192E3B2CC8B%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.2-3416026%2B%2B%2BUE4%2BRelease-4.15&UserID=fc0ab5e14c29e395dee894bb26e0e4c8%7Ccbf7e4b3a2fa4a3483ff9ae11ae13430%7C0a898179-1db4-4ad6-89ab-2983492e6393&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.10-02.03.33:820][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.34:321][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.34:821][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.35:322][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.35:823][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.36:324][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.36:825][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.37:325][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.37:826][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.38:327][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.38:832][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.39:332][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.39:833][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.40:334][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.40:835][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.41:335][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.41:836][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.42:337][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.42:838][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.43:339][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.43:839][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.44:340][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.44:841][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.45:342][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.45:842][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.46:343][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.46:844][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.47:345][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.47:845][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.48:346][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.48:847][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.49:348][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.49:848][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.50:349][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.50:850][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.51:351][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.51:851][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.52:352][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.52:853][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.53:354][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.53:854][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.54:355][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.54:856][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.55:357][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.55:858][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.56:358][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.56:859][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.57:360][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.57:860][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.58:361][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.58:862][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.59:362][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.03.59:863][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.00:363][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.00:863][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.01:364][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.01:865][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.02:374][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.02:875][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.03:375][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.03:876][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.04:376][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.04:876][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.05:377][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.05:877][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.06:378][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.06:878][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.07:379][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.07:879][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.08:380][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.08:881][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.09:381][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.09:882][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.10:382][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.10:883][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.11:383][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.11:884][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.12:384][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.12:884][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.13:385][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.13:886][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.14:386][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.14:886][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.15:387][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.15:887][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.16:388][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.16:888][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.17:388][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.17:896][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.18:396][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.18:897][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.19:398][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.19:898][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.20:399][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.20:902][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.21:403][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.21:903][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.22:412][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.22:913][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.23:413][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.23:941][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.24:443][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.24:943][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.25:443][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.25:944][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.26:445][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.26:945][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.27:465][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.27:965][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.28:514][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.29:014][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.29:515][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.30:020][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.30:522][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.31:022][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.31:522][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.32:023][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.32:524][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.33:024][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.33:525][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.34:025][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.34:525][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.35:026][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.35:526][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.36:027][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.36:527][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.37:027][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.37:534][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.38:034][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.38:535][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.39:035][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.39:535][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.40:036][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.40:536][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.41:037][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.41:537][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.42:040][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.42:540][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.43:041][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.43:541][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.44:042][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.44:542][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.45:042][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.45:543][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.46:043][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.46:598][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.47:099][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.47:599][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.48:113][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.48:613][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.49:114][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.49:623][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.50:124][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.50:624][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.51:128][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.51:628][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.52:129][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.52:686][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.53:187][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.53:688][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.54:201][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.54:702][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.55:203][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.55:703][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.56:204][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.56:704][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.57:204][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.57:705][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.58:206][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.58:706][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.59:206][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.04.59:707][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.00:210][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.00:711][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.01:211][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.01:713][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.02:213][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.02:714][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.03:214][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.03:714][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.04:215][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.04:715][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.05:216][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.05:716][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.06:216][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.06:717][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.07:217][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.07:718][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.08:218][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.08:718][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.09:228][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.09:728][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.10:229][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.10:741][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.11:242][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.11:743][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.12:253][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.12:753][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.13:254][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.13:781][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.14:282][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.14:782][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.15:283][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.15:783][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.16:283][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.16:784][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.17:284][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.17:785][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.18:304][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.18:805][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.19:305][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.19:826][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.20:327][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.20:828][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.21:328][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.21:828][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.22:329][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.22:830][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.23:330][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.23:830][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.24:352][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.24:853][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.25:353][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.25:854][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.26:354][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.26:854][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.27:355][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.27:855][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.28:356][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.28:865][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.29:366][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.29:867][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.30:391][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.30:892][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.31:393][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.31:895][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.32:395][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.32:896][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.33:396][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.33:897][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.34:397][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.34:933][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.35:435][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.35:936][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.36:443][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.36:943][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.37:444][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.37:944][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.38:445][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.38:946][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.39:447][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.39:947][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.40:448][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.40:948][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.41:449][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.41:949][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.42:466][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.42:967][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.43:467][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.43:968][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.44:468][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.44:968][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.45:483][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.45:983][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.46:484][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.46:990][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.47:491][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.47:991][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.48:513][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.49:013][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.49:513][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.50:014][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.50:515][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.51:016][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.51:517][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.52:017][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.52:517][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.53:028][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.53:529][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.54:029][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.54:552][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.55:052][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.55:553][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.56:054][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.56:554][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.57:055][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.57:574][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.58:075][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.58:575][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.59:076][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.05.59:576][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.00:076][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.00:586][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.01:087][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.01:587][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.02:099][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.02:600][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.03:101][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.03:613][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.04:114][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.04:615][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.05:115][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.05:616][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.06:116][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.06:632][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.07:133][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.07:633][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.08:144][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.08:645][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.09:146][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.09:652][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.10:152][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.10:652][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.11:153][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.11:653][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.12:153][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.12:697][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.13:197][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.13:698][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.14:231][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.14:732][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.15:232][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.15:737][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.16:237][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.16:738][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.17:239][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.17:740][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.18:240][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.18:740][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.19:241][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.19:741][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.20:242][499]LogHttp:Display: Sleeping 0.5s to wait for 2 outstanding Http requests.
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: request failed, libcurl error: 0 (No error)
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: libcurl info message cache 1 (  Trying 107.21.20.6...)
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: libcurl info message cache 2 (connect to 107.21.20.6 port 443 failed: Timed out)
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: libcurl info message cache 3 (  Trying 34.198.55.107...)
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: libcurl info message cache 4 (Connected to datarouter.ol.epicgames.com (34.198.55.107) port 443 (#10))
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: libcurl info message cache 5 (ALPN, offering http/1.1)
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: libcurl info message cache 6 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: libcurl info message cache 7 (TLSv1.2 (OUT), TLS header, Certificate Status (22):)
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: libcurl info message cache 8 (TLSv1.2 (OUT), TLS handshake, Client hello (1):)
+[2017.05.10-02.06.20:742][499]LogHttp:Warning: 0000023D8B8C5000: libcurl info message cache 9 (Closing connection 10)
+[2017.05.10-02.06.20:742][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.21:243][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.21:743][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.22:244][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.22:744][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.23:245][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.23:746][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.24:247][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.24:767][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.25:267][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.25:767][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.26:319][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.26:821][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.27:321][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.27:822][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.28:324][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.28:824][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.29:325][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.29:826][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.30:326][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.30:900][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.31:401][499]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.05.10-02.06.31:901][499]LogHttp:Warning: 0000023D8B0B2200: request failed, libcurl error: 0 (No error)
+[2017.05.10-02.06.31:901][499]LogHttp:Warning: 0000023D8B0B2200: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x23d9378bfb8 [serially])
+[2017.05.10-02.06.31:901][499]LogHttp:Warning: 0000023D8B0B2200: libcurl info message cache 1 (Hostname datarouter.ol.epicgames.com was found in DNS cache)
+[2017.05.10-02.06.31:901][499]LogHttp:Warning: 0000023D8B0B2200: libcurl info message cache 2 (  Trying 107.21.20.6...)
+[2017.05.10-02.06.31:901][499]LogHttp:Warning: 0000023D8B0B2200: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (107.21.20.6) port 443 (#11))
+[2017.05.10-02.06.31:901][499]LogHttp:Warning: 0000023D8B0B2200: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2017.05.10-02.06.31:901][499]LogHttp:Warning: 0000023D8B0B2200: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2017.05.10-02.06.31:901][499]LogHttp:Warning: 0000023D8B0B2200: libcurl info message cache 6 (TLSv1.2 (OUT), TLS header, Certificate Status (22):)
+[2017.05.10-02.06.31:901][499]LogHttp:Warning: 0000023D8B0B2200: libcurl info message cache 7 (TLSv1.2 (OUT), TLS handshake, Client hello (1):)
+[2017.05.10-02.06.31:901][499]LogHttp:Warning: 0000023D8B0B2200: libcurl info message cache 8 (Closing connection 11)
+[2017.05.10-02.06.31:930][499]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.05.10-02.06.31:934][499]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.05.10-02.06.31:934][499]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.05.10-02.06.31:935][499]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.05.10-02.06.31:935][499]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.05.10-02.06.31:935][499]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.05.10-02.06.31:939][499]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.05.10-02.06.31:939][499]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.05.10-02.06.31:939][499]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.05.10-02.06.31:939][499]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.05.10-02.06.31:939][499]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.05.10-02.06.31:939][499]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.05.10-02.06.31:939][499]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.05.10-02.06.31:939][499]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.05.10-02.06.31:939][499]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.05.10-02.06.31:939][499]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.05.10-02.06.31:945][499]LogExit: Exiting.
+[2017.05.10-02.06.32:012][499]Log file closed, 05/09/17 22:06:32

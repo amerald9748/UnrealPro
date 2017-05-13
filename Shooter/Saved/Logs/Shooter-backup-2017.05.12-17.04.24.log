@@ -1,0 +1,1074 @@
+﻿Log file open, 05/11/17 20:29:47
+LogInit:Display: Running engine for game: Shooter
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1624319010) SRandInit(-1624319010).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.126956
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3416026
+LogInit: Engine Version: 4.15.2-3416026+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May  1 2017 13:11:28
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: D:/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.05.12-00.29.49:547][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.12-00.29.49:547][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.05.12-00.29.49:588][  0]LogInit: Computer: DESKTOP-44SKKF1
+[2017.05.12-00.29.49:588][  0]LogInit: User: 1
+[2017.05.12-00.29.49:588][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.05.12-00.29.49:588][  0]LogInit: High frequency timer resolution =1.754520 MHz
+[2017.05.12-00.29.49:588][  0]LogMemory: Memory total: Physical=7.3GB (8GB approx)
+[2017.05.12-00.29.49:588][  0]LogMemory: Platform Memory Stats for Windows
+[2017.05.12-00.29.49:588][  0]LogMemory: Process Physical Memory: 262.72 MB used, 262.72 MB peak
+[2017.05.12-00.29.49:588][  0]LogMemory: Process Virtual Memory: 262.89 MB used, 262.89 MB peak
+[2017.05.12-00.29.49:588][  0]LogMemory: Physical Memory: 3778.56 MB used,  3706.77 MB free, 7485.34 MB total
+[2017.05.12-00.29.49:588][  0]LogMemory: Virtual Memory: 641.61 MB used,  3706.77 MB free, 134217728.00 MB total
+[2017.05.12-00.29.49:760][  0]LogInit: Overriding culture en with editor configuration.
+[2017.05.12-00.29.51:081][  0]LogD3D11RHI: D3D11 adapters:
+[2017.05.12-00.29.51:121][  0]LogD3D11RHI:    0. 'AMD Radeon R6 Graphics' (Feature Level 11_0)
+[2017.05.12-00.29.51:121][  0]LogD3D11RHI:       487/0/3742 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.05.12-00.29.51:125][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.05.12-00.29.51:125][  0]LogD3D11RHI:       0/0/3742 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.05.12-00.29.51:125][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.05.12-00.29.51:147][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.05.12-00.29.51:147][  0]LogD3D11RHI:     GPU DeviceId: 0x9874 (for the marketing name, search the web for "GPU Device Id")
+[2017.05.12-00.29.51:147][  0]LogWindows: EnumDisplayDevices:
+[2017.05.12-00.29.51:147][  0]LogWindows:    0. 'AMD Radeon R6 Graphics' (P:1 D:1)
+[2017.05.12-00.29.51:148][  0]LogWindows:    1. 'AMD Radeon R6 Graphics' (P:0 D:0)
+[2017.05.12-00.29.51:150][  0]LogWindows:    2. 'AMD Radeon R6 Graphics' (P:0 D:0)
+[2017.05.12-00.29.51:151][  0]LogWindows: DebugString: FoundDriverCount:3 
+[2017.05.12-00.29.51:151][  0]LogD3D11RHI:     Adapter Name: AMD Radeon R6 Graphics
+[2017.05.12-00.29.51:151][  0]LogD3D11RHI:   Driver Version: Crimson 16.6 (internal:21.19.137.514, unified:21.19.137.514)
+[2017.05.12-00.29.51:151][  0]LogD3D11RHI:      Driver Date: 11-21-2016
+[2017.05.12-00.29.51:151][  0]LogRHI: Texture pool is 340 MB (70% of 487 MB)
+[2017.05.12-00.29.51:243][  0]LogD3D11RHI: Async texture creation enabled
+[2017.05.12-00.29.51:266][  0]LogD3D11RHI: GPU Timing Frequency: 100.000000 (Debug: 2 1)
+[2017.05.12-00.29.51:269][  0]LogShaderCompilers: Guid format shader working directory is 3 characters bigger than the processId version (C:/Users/lenovo/Documents/UnrealPro/Shooter/Intermediate/Shaders/WorkingDirectory/78260/).
+[2017.05.12-00.29.51:270][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/lenovo/AppData/Local/Temp/UnrealShaderWorkingDir/60799F0A4D97A9CD8570C283EFD2C4CA/'.
+[2017.05.12-00.29.51:270][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.05.12-00.29.54:345][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.05.12-00.29.54:470][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.05.12-00.29.54:598][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.05.12-00.29.54:724][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.05.12-00.29.54:856][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.05.12-00.29.54:993][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.05.12-00.29.55:121][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.05.12-00.29.55:252][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.05.12-00.29.55:358][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.05.12-00.29.55:480][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.05.12-00.29.55:607][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.05.12-00.29.55:729][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.05.12-00.29.55:853][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.05.12-00.29.55:982][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.05.12-00.29.56:116][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.05.12-00.29.56:369][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.05.12-00.29.56:369][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.05.12-00.29.56:468][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.05.12-00.29.56:678][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.05.12-00.29.56:764][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.05.12-00.29.56:898][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.05.12-00.29.57:025][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.05.12-00.29.57:150][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.05.12-00.29.57:277][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.05.12-00.29.57:277][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.05.12-00.29.58:367][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.05.12-00.29.58:506][  0]LogDerivedDataCache: Loaded boot cache 0.14s 50MB C:/Users/lenovo/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.12-00.29.58:506][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/lenovo/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.05.12-00.29.58:506][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/lenovo/Documents/UnrealPro/Shooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.05.12-00.29.58:506][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.05.12-00.29.58:506][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/lenovo/Documents/UnrealPro/Shooter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.05.12-00.29.58:506][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.05.12-00.29.58:544][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.05.12-00.29.58:559][  0]LogDerivedDataCache: Using Local data cache path C:/Users/lenovo/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.05.12-00.29.58:581][  0]LogSlate: Using Freetype 2.6.0
+[2017.05.12-00.29.58:583][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.12-00.29.58:583][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.12-00.29.59:226][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.12-00.29.59:233][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.05.12-00.29.59:715][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.05.12-00.29.59:814][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.05.12-00.29.59:925][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.05.12-00.29.59:925][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.05.12-00.29.59:925][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.05.12-00.30.01:210][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: shooter, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 1589670086
+[2017.05.12-00.30.01:288][  0]LogAssetRegistry: FAssetRegistry took 0.0225 seconds to start up
+[2017.05.12-00.30.01:393][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.048131 seconds
+[2017.05.12-00.30.01:406][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.05.12-00.30.01:406][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.05.12-00.30.01:406][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.05.12-00.30.01:580][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.05.12-00.30.05:200][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.05.12-00.30.05:282][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.05.12-00.30.06:308][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.05.12-00.30.07:201][  0]SourceControl: Info Source control is disabled
+[2017.05.12-00.30.07:204][  0]SourceControl: Info Source control is disabled
+[2017.05.12-00.30.07:313][  0]SourceControl: Info Source control is disabled
+[2017.05.12-00.30.07:419][  0]SourceControl: Info Source control is disabled
+[2017.05.12-00.30.10:441][  0]LogEngine: Initializing Engine...
+[2017.05.12-00.30.10:445][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.05.12-00.30.10:686][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.05.12-00.30.10:686][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.05.12-00.30.10:990][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.05.12-00.30.11:021][  0]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-00.30.11:128][  0]LogInit: FAudioDevice initialized.
+[2017.05.12-00.30.11:204][  0]LogDerivedDataCache: Saved boot cache 0.08s 50MB C:/Users/lenovo/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.12-00.30.11:228][  0]LogInit: Texture streaming: Enabled
+[2017.05.12-00.30.11:474][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.05.12-00.30.11:723][  0]LogInit: Transaction tracking system initialized
+[2017.05.12-00.30.12:558][  0]BlueprintLog: New page: Editor Load
+[2017.05.12-00.30.14:741][  0]LocalizationService: Info Localization service is disabled
+[2017.05.12-00.30.16:695][  0]LogConsoleResponse:Display: 
+[2017.05.12-00.30.17:003][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.05.12-00.30.17:003][  0]LogCook:Display: Mobile HDR setting 1
+[2017.05.12-00.30.17:353][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/' took 0.03s
+[2017.05.12-00.30.19:548][  0]SourceControl: Info Source control is disabled
+[2017.05.12-00.30.19:636][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-00.30.19:676][  0]LogSlate: Took 0.000625 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.12-00.30.56:064][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-00.30.56:066][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-00.30.57:417][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-00.30.57:420][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-00.30.57:597][  0]Cmd: MAP LOAD FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.12-00.30.57:599][  0]LightingResults: New page: Lighting Build
+[2017.05.12-00.30.57:723][  0]MapCheck: New page: Map Check
+[2017.05.12-00.30.57:723][  0]LightingResults: New page: Lighting Build
+[2017.05.12-00.30.58:650][  0]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning  Jump to Fall  will never be taken, please connect something to  Can Enter Transition
+[2017.05.12-00.30.58:688][  0]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning [0073.54] Compile of UE4ASP_HeroTPP_AnimBlueprint successful, but with 1 Warning(s) [in 58 ms] (/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint)
+[2017.05.12-00.30.58:688][  0]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning [0073.54] Compile of UE4ASP_HeroTPP_AnimBlueprint successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint)
+[2017.05.12-00.30.58:688][  0]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning [0073.54] Compile of UE4ASP_HeroTPP_AnimBlueprint successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint)
+[2017.05.12-00.30.58:763][  0]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning  Jump to Fall  will never be taken, please connect something to  Can Enter Transition
+[2017.05.12-00.30.58:795][  0]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning [0073.64] Compile of UE4ASP_HeroTPP_AnimBlueprint successful, but with 1 Warning(s) [in 56 ms] (/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint)
+[2017.05.12-00.30.58:796][  0]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning [0073.64] Compile of UE4ASP_HeroTPP_AnimBlueprint successful, but with 2 Warning(s) [in 0 ms] (/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint)
+[2017.05.12-00.30.58:796][  0]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning [0073.65] Compile of UE4ASP_HeroTPP_AnimBlueprint successful, but with 3 Warning(s) [in 0 ms] (/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint)
+[2017.05.12-00.31.00:438][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-00.31.00:544][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.12-00.31.00:547][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.12-00.31.00:675][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 127.551ms to complete.
+[2017.05.12-00.31.00:675][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 3.078
+[2017.05.12-00.31.01:065][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//SplashScreenThread///Thread_1122c_0///####STATCAT_Advanced#### old //STATGROUP_Threads//SplashScreenThread///Thread_9008_0///####STATCAT_Advanced####
+[2017.05.12-00.31.01:065][  0]LogCollectionManager: Loaded 0 collections in 0.004505 seconds
+[2017.05.12-00.31.01:236][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Collections/' took 0.01s
+[2017.05.12-00.31.01:236][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Developers/1/Collections/' took 0.01s
+[2017.05.12-00.31.01:236][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Collections/' took 0.01s
+[2017.05.12-00.31.01:236][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000005 seconds
+[2017.05.12-00.31.01:264][  0]LogContentBrowser: Native class hierarchy populated in 0.0239 seconds. Added 2245 classes and 453 folders.
+[2017.05.12-00.31.01:442][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2017.05.12-00.31.02:203][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0012 seconds. Added 0 classes and 0 folders.
+[2017.05.12-00.31.02:321][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
+[2017.05.12-00.31.02:491][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.05.12-00.31.02:511][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.05.12-00.31.02:666][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2017.05.12-00.31.02:667][  0]LogLoad: (Engine Initialization) Total time: 77.52 seconds
+[2017.05.12-00.31.02:667][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.52 seconds
+[2017.05.12-00.31.02:667][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.05.12-00.31.02:667][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.05.12-00.31.02:677][  0]LogOcInput: OculusInput pre-init called
+[2017.05.12-00.31.02:713][  0]LogContentStreaming: Texture pool size now 400 MB
+[2017.05.12-00.31.02:717][  0]LogSlate: Took 0.000537 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.05.12-00.31.02:747][  0]LogSlate: Took 0.015641 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.05.12-00.31.03:148][  0]LogSlate: Took 0.010007 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.12-00.31.03:226][  1]LogRenderer: Reallocating scene render targets to support 840x396 NumSamples 1 (Frame:2).
+[2017.05.12-00.31.03:226][  1]LogHttp:Warning: 0000019C064B1780: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.31.03:226][  1]LogHttp:Warning: 0000019C064B1780: libcurl info message cache 0 (Could not resolve host: cdn.unrealengine.com)
+[2017.05.12-00.31.03:226][  1]LogHttp:Warning: 0000019C064B1780: libcurl info message cache 1 (Closing connection 0)
+[2017.05.12-00.31.03:506][  2]LogHttp:Warning: 0000019C06BD4880: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.31.03:507][  2]LogHttp:Warning: 0000019C06BD4880: libcurl info message cache 0 (Could not resolve host: cdn.unrealengine.com)
+[2017.05.12-00.31.03:507][  2]LogHttp:Warning: 0000019C06BD4880: libcurl info message cache 1 (Closing connection 1)
+[2017.05.12-00.31.03:665][  3]LogHttp:Warning: 0000019C0F5B4400: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.31.03:665][  3]LogHttp:Warning: 0000019C0F5B4400: libcurl info message cache 0 (Could not resolve host: cdn.unrealengine.com)
+[2017.05.12-00.31.03:665][  3]LogHttp:Warning: 0000019C0F5B4400: libcurl info message cache 1 (Closing connection 2)
+[2017.05.12-00.31.04:037][  5]LogAssetRegistry: Asset discovery search completed in 62.7713 seconds
+[2017.05.12-00.31.04:037][  5]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000021 seconds (found 0 objects)
+[2017.05.12-00.31.04:037][  5]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000051 seconds (updated 0 objects)
+[2017.05.12-00.31.04:064][  5]LogSlate: Took 0.000531 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.12-00.31.11:163][367]LogRenderer: Reallocating scene render targets to support 884x408 NumSamples 1 (Frame:328).
+[2017.05.12-00.31.15:040][555]LogSlate: Took 0.000446 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.12-00.31.15:323][555]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.05.12-00.31.15:716][555]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2017.05.12-00.31.16:679][555]LogSlate: Took 0.000361 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.12-00.31.17:078][555]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0022 seconds. Added 112 classes and 0 folders.
+[2017.05.12-00.31.18:066][555]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_4:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2017.05.12-00.31.18:446][555]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_7:PersistentLevel.Actor_1.DebugSkelMeshComponent_2) Already registered. Aborting.
+[2017.05.12-00.31.18:753][555]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_7:PersistentLevel.Actor_1.DebugSkelMeshComponent_2) - call TermArticulated first.
+[2017.05.12-00.31.19:031][555]LogSlate: Took 0.015095 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.05.12-00.32.02:750][788]LogHttp:Warning: 0000019C82674580: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.32.02:750][788]LogHttp:Warning: 0000019C82674580: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.32.02:751][788]LogHttp:Warning: 0000019C82674580: libcurl info message cache 1 (Closing connection 3)
+[2017.05.12-00.34.02:690][276]LogHttp:Warning: 0000019C82675300: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.34.02:690][276]LogHttp:Warning: 0000019C82675300: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.34.02:690][276]LogHttp:Warning: 0000019C82675300: libcurl info message cache 1 (Closing connection 4)
+[2017.05.12-00.35.02:727][ 39]LogHttp:Warning: 0000019C82674400: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.35.02:727][ 39]LogHttp:Warning: 0000019C82674400: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.35.02:727][ 39]LogHttp:Warning: 0000019C82674400: libcurl info message cache 1 (Closing connection 5)
+[2017.05.12-00.36.02:756][776]LogHttp:Warning: 0000019C82675A80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.36.02:756][776]LogHttp:Warning: 0000019C82675A80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.36.02:757][776]LogHttp:Warning: 0000019C82675A80: libcurl info message cache 1 (Closing connection 6)
+[2017.05.12-00.36.06:963][890]LogSlate: Took 0.015660 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.05.12-00.36.45:771][979]LogEditorTransaction: Undo Paste clipboard contents
+[2017.05.12-00.36.45:860][979]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2017.05.12-00.36.45:877][979]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_7:PersistentLevel.Actor_1.DebugSkelMeshComponent_2) Already registered. Aborting.
+[2017.05.12-00.37.33:294][313]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-00.37.34:423][326]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-00.37.34:726][326]LogSavePackage: Save=229.25ms
+[2017.05.12-00.37.34:726][326]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint2DDDF938427E8792C3E0509A4C5D0BB1.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-00.37.34:746][326]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-00.38.02:738][120]LogHttp:Warning: 0000019C0148B880: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.38.02:738][120]LogHttp:Warning: 0000019C0148B880: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.38.02:738][120]LogHttp:Warning: 0000019C0148B880: libcurl info message cache 1 (Closing connection 7)
+[2017.05.12-00.38.35:455][ 79]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-00.39.02:742][868]LogHttp:Warning: 0000019C42D47880: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.39.02:742][868]LogHttp:Warning: 0000019C42D47880: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.39.02:742][868]LogHttp:Warning: 0000019C42D47880: libcurl info message cache 1 (Closing connection 8)
+[2017.05.12-00.40.02:768][636]LogHttp:Warning: 0000019C858AFB80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.40.02:768][636]LogHttp:Warning: 0000019C858AFB80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.40.02:768][636]LogHttp:Warning: 0000019C858AFB80: libcurl info message cache 1 (Closing connection 9)
+[2017.05.12-00.41.52:739][914]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-00.41.54:623][952]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-00.41.54:867][952]LogSavePackage: Save=212.03ms
+[2017.05.12-00.41.54:868][952]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint33DD55474D815E46CC5210956C9FA50C.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-00.41.54:880][952]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-00.42.00:198][118]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.12-00.42.00:246][118]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.42.00:247][118]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.12-00.42.00:253][118]PIE: New page: PIE session: ThirdPersonExampleMap (May 11, 2017, 4:42:00 PM)
+[2017.05.12-00.42.00:255][118]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.12-00.42.00:337][118]LogPlayLevel: PIE: StaticDuplicateObject took: (0.081721s)
+[2017.05.12-00.42.00:338][118]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-00.42.00:339][118]LogPlayLevel: PIE: World Init took: (0.001840s)
+[2017.05.12-00.42.00:340][118]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.085251s)
+[2017.05.12-00.42.00:394][118]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-00.42.00:419][118]LogInit: FAudioDevice initialized.
+[2017.05.12-00.42.01:493][118]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.12-00.42.01:503][118]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.05.11-20.42.01
+[2017.05.12-00.42.01:508][118]LogWorld: Bringing up level for play took: 0.012051
+[2017.05.12-00.42.01:642][118]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0014 seconds. Added 11 classes and 0 folders.
+[2017.05.12-00.42.01:648][118]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 1.345
+[2017.05.12-00.42.01:648][118]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.42.02:702][168]LogHttp:Warning: 0000019C83191480: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.42.02:702][168]LogHttp:Warning: 0000019C83191480: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.42.02:702][168]LogHttp:Warning: 0000019C83191480: libcurl info message cache 1 (Closing connection 10)
+[2017.05.12-00.42.59:229][561]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.42.59:325][561]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.42.59:407][562]Cmd: SELECT NONE
+[2017.05.12-00.43.02:778][662]LogHttp:Warning: 0000019C016BC400: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.43.02:778][662]LogHttp:Warning: 0000019C016BC400: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.43.02:778][662]LogHttp:Warning: 0000019C016BC400: libcurl info message cache 1 (Closing connection 11)
+[2017.05.12-00.43.30:751][462]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.12-00.43.30:810][462]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.43.30:810][462]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.12-00.43.30:810][462]PIE: New page: PIE session: ThirdPersonExampleMap (May 11, 2017, 4:43:30 PM)
+[2017.05.12-00.43.30:811][462]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.12-00.43.30:884][462]LogPlayLevel: PIE: StaticDuplicateObject took: (0.073345s)
+[2017.05.12-00.43.30:886][462]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-00.43.30:886][462]LogPlayLevel: PIE: World Init took: (0.002130s)
+[2017.05.12-00.43.30:887][462]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.076114s)
+[2017.05.12-00.43.30:939][462]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-00.43.30:961][462]LogInit: FAudioDevice initialized.
+[2017.05.12-00.43.31:013][462]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.12-00.43.31:023][462]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.05.11-20.43.31
+[2017.05.12-00.43.31:024][462]LogWorld: Bringing up level for play took: 0.008167
+[2017.05.12-00.43.31:026][462]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.723
+[2017.05.12-00.43.31:027][462]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.43.34:820][562]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.43.34:868][562]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.44.02:767][343]LogHttp:Warning: 0000019C2B4EAB00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.44.02:767][343]LogHttp:Warning: 0000019C2B4EAB00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.44.02:767][343]LogHttp:Warning: 0000019C2B4EAB00: libcurl info message cache 1 (Closing connection 12)
+[2017.05.12-00.44.03:289][353]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.034
+[2017.05.12-00.44.03:296][353]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint] ([1] browsable assets)...
+[2017.05.12-00.44.03:296][353]OBJ SavePackage: Finished generating thumbnails for package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-00.44.03:546][353]LogSavePackage: Save=203.17ms
+[2017.05.12-00.44.03:546][353]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint_Auto1B5806DA943294A97D2316595C32C49AA.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto1.uasset'
+[2017.05.12-00.44.03:553][353]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto1.uasset
+[2017.05.12-00.44.03:553][353]LogFileHelpers: Auto-saving content packages took 0.263
+[2017.05.12-00.44.21:967][889]LogEditorViewport: Clicking on Actor (context menu): LightmassImportanceVolume (LightmassImportanceVolume)
+[2017.05.12-00.44.22:780][911]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.12-00.44.22:828][911]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.44.22:828][911]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.12-00.44.22:828][911]PIE: New page: PIE session: ThirdPersonExampleMap (May 11, 2017, 4:44:22 PM)
+[2017.05.12-00.44.22:829][911]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.12-00.44.22:917][911]LogPlayLevel: PIE: StaticDuplicateObject took: (0.087750s)
+[2017.05.12-00.44.22:918][911]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-00.44.22:919][911]LogPlayLevel: PIE: World Init took: (0.002005s)
+[2017.05.12-00.44.22:919][911]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.090226s)
+[2017.05.12-00.44.22:972][911]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-00.44.22:996][911]LogInit: FAudioDevice initialized.
+[2017.05.12-00.44.23:034][911]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.12-00.44.23:044][911]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.05.11-20.44.23
+[2017.05.12-00.44.23:045][911]LogWorld: Bringing up level for play took: 0.008415
+[2017.05.12-00.44.23:047][911]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.745
+[2017.05.12-00.44.23:048][911]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.44.27:989][191]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.44.28:080][191]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.45.22:844][658]LogHttp:Warning: 0000019C2B4FEB00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.45.22:844][658]LogHttp:Warning: 0000019C2B4FEB00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.45.22:844][658]LogHttp:Warning: 0000019C2B4FEB00: libcurl info message cache 1 (Closing connection 13)
+[2017.05.12-00.46.00:283][632]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-00.46.01:543][652]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-00.46.01:769][652]LogSavePackage: Save=199.71ms
+[2017.05.12-00.46.01:769][652]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint6E4F3C0347D679736C14A7BCE00E03F3.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-00.46.01:781][652]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-00.46.05:052][759]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.12-00.46.05:103][759]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.46.05:103][759]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.12-00.46.05:103][759]PIE: New page: PIE session: ThirdPersonExampleMap (May 11, 2017, 4:46:05 PM)
+[2017.05.12-00.46.05:103][759]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.12-00.46.05:174][759]LogPlayLevel: PIE: StaticDuplicateObject took: (0.070396s)
+[2017.05.12-00.46.05:175][759]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-00.46.05:176][759]LogPlayLevel: PIE: World Init took: (0.001929s)
+[2017.05.12-00.46.05:176][759]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.073152s)
+[2017.05.12-00.46.05:236][759]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-00.46.05:259][759]LogInit: FAudioDevice initialized.
+[2017.05.12-00.46.05:301][759]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.12-00.46.05:312][759]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.11-20.46.05
+[2017.05.12-00.46.05:312][759]LogWorld: Bringing up level for play took: 0.008808
+[2017.05.12-00.46.05:314][759]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 1.012
+[2017.05.12-00.46.05:315][759]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.46.22:758][753]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.46.22:852][753]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.46.43:789][337]LogHttp:Warning: 0000019C8B442200: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.46.43:789][337]LogHttp:Warning: 0000019C8B442200: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.46.43:789][337]LogHttp:Warning: 0000019C8B442200: libcurl info message cache 1 (Closing connection 14)
+[2017.05.12-00.46.57:656][680]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-00.46.57:880][680]LogSavePackage: Save=197.74ms
+[2017.05.12-00.46.57:880][680]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprintF1640E4A49949F8B3C7DE7B823943B08.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-00.46.57:894][680]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-00.46.58:342][693]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-00.47.11:878][ 67]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.12-00.47.11:930][ 67]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.47.11:930][ 67]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.12-00.47.11:930][ 67]PIE: New page: PIE session: ThirdPersonExampleMap (May 11, 2017, 4:47:11 PM)
+[2017.05.12-00.47.11:930][ 67]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.12-00.47.11:990][ 67]LogPlayLevel: PIE: StaticDuplicateObject took: (0.060466s)
+[2017.05.12-00.47.11:992][ 67]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-00.47.11:992][ 67]LogPlayLevel: PIE: World Init took: (0.001688s)
+[2017.05.12-00.47.11:993][ 67]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.062760s)
+[2017.05.12-00.47.12:046][ 67]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-00.47.12:069][ 67]LogInit: FAudioDevice initialized.
+[2017.05.12-00.47.12:112][ 67]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.12-00.47.12:121][ 67]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.11-20.47.12
+[2017.05.12-00.47.12:122][ 67]LogWorld: Bringing up level for play took: 0.008083
+[2017.05.12-00.47.12:124][ 67]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.179
+[2017.05.12-00.47.12:125][ 67]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.47.25:157][807]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.47.25:246][807]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.47.44:624][573]LogHttp:Warning: 0000019C1E1C4100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.47.44:624][573]LogHttp:Warning: 0000019C1E1C4100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.47.44:624][573]LogHttp:Warning: 0000019C1E1C4100: libcurl info message cache 1 (Closing connection 15)
+[2017.05.12-00.49.02:781][575]LogHttp:Warning: 0000019C884E2680: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.49.02:781][575]LogHttp:Warning: 0000019C884E2680: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.49.02:781][575]LogHttp:Warning: 0000019C884E2680: libcurl info message cache 1 (Closing connection 16)
+[2017.05.12-00.50.29:850][787]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-00.50.31:014][801]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-00.50.31:287][801]LogSavePackage: Save=214.45ms
+[2017.05.12-00.50.31:287][801]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprintF29C1781479F0D528F1107B08EFA4B14.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-00.50.31:301][801]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-00.51.02:751][556]LogHttp:Warning: 0000019C28556800: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.51.02:751][556]LogHttp:Warning: 0000019C28556800: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.51.02:751][556]LogHttp:Warning: 0000019C28556800: libcurl info message cache 1 (Closing connection 17)
+[2017.05.12-00.52.02:763][ 19]LogHttp:Warning: 0000019C6783DD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.52.02:763][ 19]LogHttp:Warning: 0000019C6783DD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.52.02:763][ 19]LogHttp:Warning: 0000019C6783DD80: libcurl info message cache 1 (Closing connection 18)
+[2017.05.12-00.52.22:350][506]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/AnimStarterPack/Hit_React_4.Hit_React_4
+[2017.05.12-00.52.54:047][299]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-00.52.55:384][319]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-00.52.55:625][319]LogSavePackage: Save=216.00ms
+[2017.05.12-00.52.55:625][319]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint2F0CFA1749887E2B40E903BF9A922300.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-00.52.55:637][319]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-00.52.58:035][400]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.12-00.52.58:087][400]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.52.58:087][400]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.12-00.52.58:088][400]PIE: New page: PIE session: ThirdPersonExampleMap (May 11, 2017, 4:52:58 PM)
+[2017.05.12-00.52.58:088][400]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.12-00.52.58:159][400]LogPlayLevel: PIE: StaticDuplicateObject took: (0.071661s)
+[2017.05.12-00.52.58:161][400]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-00.52.58:161][400]LogPlayLevel: PIE: World Init took: (0.001911s)
+[2017.05.12-00.52.58:162][400]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.074178s)
+[2017.05.12-00.52.58:219][400]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-00.52.58:244][400]LogInit: FAudioDevice initialized.
+[2017.05.12-00.52.58:282][400]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.12-00.52.58:292][400]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.11-20.52.58
+[2017.05.12-00.52.58:293][400]LogWorld: Bringing up level for play took: 0.008191
+[2017.05.12-00.52.58:295][400]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.008
+[2017.05.12-00.52.58:295][400]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.53.10:794][106]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.53.10:887][106]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-00.53.54:103][312]LogHttp:Warning: 0000019C91792E00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.53.54:103][312]LogHttp:Warning: 0000019C91792E00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.53.54:103][312]LogHttp:Warning: 0000019C91792E00: libcurl info message cache 1 (Closing connection 19)
+[2017.05.12-00.55.02:751][100]LogHttp:Warning: 0000019C909C2C80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.55.02:751][100]LogHttp:Warning: 0000019C909C2C80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.55.02:751][100]LogHttp:Warning: 0000019C909C2C80: libcurl info message cache 1 (Closing connection 20)
+[2017.05.12-00.56.02:747][736]LogHttp:Warning: 0000019C8CC0AE00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.56.02:747][736]LogHttp:Warning: 0000019C8CC0AE00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.56.02:747][736]LogHttp:Warning: 0000019C8CC0AE00: libcurl info message cache 1 (Closing connection 21)
+[2017.05.12-00.56.06:139][826]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.037
+[2017.05.12-00.56.06:145][826]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint] ([1] browsable assets)...
+[2017.05.12-00.56.06:175][826]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-00.56.06:175][826]OBJ SavePackage: Finished generating thumbnails for package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-00.56.06:448][826]LogSavePackage: Save=225.25ms
+[2017.05.12-00.56.06:448][826]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint_Auto2E66DDCA943EC7793C77973932F822A79.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto2.uasset'
+[2017.05.12-00.56.06:455][826]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto2.uasset
+[2017.05.12-00.56.06:455][826]LogFileHelpers: Auto-saving content packages took 0.314
+[2017.05.12-00.57.02:754][338]LogHttp:Warning: 0000019C42DF0D00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.57.02:755][338]LogHttp:Warning: 0000019C42DF0D00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.57.02:755][338]LogHttp:Warning: 0000019C42DF0D00: libcurl info message cache 1 (Closing connection 22)
+[2017.05.12-00.57.21:118][821]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-00.57.21:252][821]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning  Fall to Idle  will never be taken, please connect something to  Can Enter Transition
+[2017.05.12-00.57.21:517][821]BlueprintEditorCompileResults:Warning: Warning  Fall to Idle  will never be taken, please connect something to  Can Enter Transition
+[2017.05.12-00.57.21:525][821]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning [1656.37] Compile of UE4ASP_HeroTPP_AnimBlueprint successful, but with 1 Warning(s) [in 406 ms] (/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint)
+[2017.05.12-00.57.42:706][357]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-00.57.42:833][357]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning  Fall to Idle  will never be taken, please connect something to  Can Enter Transition
+[2017.05.12-00.57.43:089][357]BlueprintEditorCompileResults:Warning: Warning  Fall to Idle  will never be taken, please connect something to  Can Enter Transition
+[2017.05.12-00.57.43:090][357]LogBlueprint:Warning: [Compiler UE4ASP_HeroTPP_AnimBlueprint] Warning [1677.94] Compile of UE4ASP_HeroTPP_AnimBlueprint successful, but with 1 Warning(s) [in 383 ms] (/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint)
+[2017.05.12-00.58.15:156][173]LogHttp:Warning: 0000019C928A0100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.58.15:156][173]LogHttp:Warning: 0000019C928A0100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.58.15:156][173]LogHttp:Warning: 0000019C928A0100: libcurl info message cache 1 (Closing connection 23)
+[2017.05.12-00.58.29:503][519]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-00.58.30:635][536]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-00.58.30:893][536]LogSavePackage: Save=230.44ms
+[2017.05.12-00.58.30:893][536]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprintE84BCDD04E8374906D79ED9C92A7683A.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-00.58.30:925][536]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-00.59.16:179][786]LogHttp:Warning: 0000019C94E67700: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-00.59.16:179][786]LogHttp:Warning: 0000019C94E67700: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-00.59.16:179][786]LogHttp:Warning: 0000019C94E67700: libcurl info message cache 1 (Closing connection 24)
+[2017.05.12-01.00.31:462][687]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-01.00.32:659][705]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-01.00.32:910][705]LogSavePackage: Save=220.33ms
+[2017.05.12-01.00.32:910][705]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint114F5C1143C602E90821F0A8DE97A7CC.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-01.00.32:941][705]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-01.00.42:501][981]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.12-01.00.42:554][981]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.00.42:554][981]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.12-01.00.42:555][981]PIE: New page: PIE session: ThirdPersonExampleMap (May 11, 2017, 5:00:42 PM)
+[2017.05.12-01.00.42:555][981]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.12-01.00.42:627][981]LogPlayLevel: PIE: StaticDuplicateObject took: (0.072186s)
+[2017.05.12-01.00.42:629][981]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-01.00.42:629][981]LogPlayLevel: PIE: World Init took: (0.001718s)
+[2017.05.12-01.00.42:630][981]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.074478s)
+[2017.05.12-01.00.42:685][981]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-01.00.42:711][981]LogInit: FAudioDevice initialized.
+[2017.05.12-01.00.42:754][981]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.12-01.00.42:764][981]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.11-21.00.42
+[2017.05.12-01.00.42:765][981]LogWorld: Bringing up level for play took: 0.008344
+[2017.05.12-01.00.42:767][981]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.464
+[2017.05.12-01.00.42:768][981]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.00.52:139][512]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.00.52:226][512]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.00.59:342][743]LogHttp:Warning: 0000019C96DA9D80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.00.59:343][743]LogHttp:Warning: 0000019C96DA9D80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.00.59:343][743]LogHttp:Warning: 0000019C96DA9D80: libcurl info message cache 1 (Closing connection 25)
+[2017.05.12-01.01.58:082][313]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-01.01.58:325][313]LogSavePackage: Save=196.95ms
+[2017.05.12-01.01.58:325][313]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprintFC47C93D485E4CD87953E8B6501151CE.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-01.01.58:340][313]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-01.02.02:769][436]LogHttp:Warning: 0000019C94B24B80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.02.02:769][436]LogHttp:Warning: 0000019C94B24B80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.02.02:769][436]LogHttp:Warning: 0000019C94B24B80: libcurl info message cache 1 (Closing connection 26)
+[2017.05.12-01.02.47:087][580]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-01.02.47:399][580]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (搜狗拼音输入法).
+[2017.05.12-01.03.03:270][738]LogHttp:Warning: 0000019C94B27700: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.03.03:270][738]LogHttp:Warning: 0000019C94B27700: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.03.03:270][738]LogHttp:Warning: 0000019C94B27700: libcurl info message cache 1 (Closing connection 27)
+[2017.05.12-01.05.03:126][ 93]LogHttp:Warning: 0000019C94B27700: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.05.03:126][ 93]LogHttp:Warning: 0000019C94B27700: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.05.03:126][ 93]LogHttp:Warning: 0000019C94B27700: libcurl info message cache 1 (Closing connection 28)
+[2017.05.12-01.07.02:989][603]LogHttp:Warning: 0000019C0F231600: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.07.02:990][603]LogHttp:Warning: 0000019C0F231600: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.07.02:990][603]LogHttp:Warning: 0000019C0F231600: libcurl info message cache 1 (Closing connection 29)
+[2017.05.12-01.08.03:065][781]LogHttp:Warning: 0000019C0F232E00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.08.03:065][781]LogHttp:Warning: 0000019C0F232E00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.08.03:065][781]LogHttp:Warning: 0000019C0F232E00: libcurl info message cache 1 (Closing connection 30)
+[2017.05.12-01.10.02:451][339]LogHttp:Warning: 0000019C82CEAE00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.10.02:451][339]LogHttp:Warning: 0000019C82CEAE00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.10.02:451][339]LogHttp:Warning: 0000019C82CEAE00: libcurl info message cache 1 (Closing connection 31)
+[2017.05.12-01.10.52:628][732]LogEditorTransaction: Undo Delete current selection
+[2017.05.12-01.10.52:722][732]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2017.05.12-01.10.52:741][732]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_7:PersistentLevel.Actor_1.DebugSkelMeshComponent_2) Already registered. Aborting.
+[2017.05.12-01.11.02:716][991]LogHttp:Warning: 0000019C82EDF400: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.11.02:716][991]LogHttp:Warning: 0000019C82EDF400: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.11.02:717][991]LogHttp:Warning: 0000019C82EDF400: libcurl info message cache 1 (Closing connection 32)
+[2017.05.12-01.12.02:744][579]LogHttp:Warning: 0000019C00F98280: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.12.02:744][579]LogHttp:Warning: 0000019C00F98280: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.12.02:744][579]LogHttp:Warning: 0000019C00F98280: libcurl info message cache 1 (Closing connection 33)
+[2017.05.12-01.12.55:247][974]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.121
+[2017.05.12-01.12.55:253][974]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint] ([1] browsable assets)...
+[2017.05.12-01.12.55:290][974]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-01.12.55:290][974]OBJ SavePackage: Finished generating thumbnails for package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-01.12.55:562][974]LogSavePackage: Save=219.88ms
+[2017.05.12-01.12.55:562][974]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint_Auto37DE6A82A45CCEE7142C7789F8598395A.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto3.uasset'
+[2017.05.12-01.12.55:569][974]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto3.uasset
+[2017.05.12-01.12.55:569][974]LogFileHelpers: Auto-saving content packages took 0.321
+[2017.05.12-01.14.02:723][799]LogHttp:Warning: 0000019C9288F880: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.14.02:723][799]LogHttp:Warning: 0000019C9288F880: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.14.02:724][799]LogHttp:Warning: 0000019C9288F880: libcurl info message cache 1 (Closing connection 34)
+[2017.05.12-01.15.02:730][437]LogHttp:Warning: 0000019C35D3A200: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.15.02:730][437]LogHttp:Warning: 0000019C35D3A200: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.15.02:730][437]LogHttp:Warning: 0000019C35D3A200: libcurl info message cache 1 (Closing connection 35)
+[2017.05.12-01.17.02:712][737]LogHttp:Warning: 0000019C42B5D180: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.17.02:712][737]LogHttp:Warning: 0000019C42B5D180: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.17.02:712][737]LogHttp:Warning: 0000019C42B5D180: libcurl info message cache 1 (Closing connection 36)
+[2017.05.12-01.18.02:783][409]LogHttp:Warning: 0000019C2C8A9180: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.18.02:783][409]LogHttp:Warning: 0000019C2C8A9180: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.18.02:783][409]LogHttp:Warning: 0000019C2C8A9180: libcurl info message cache 1 (Closing connection 37)
+[2017.05.12-01.19.07:952][143]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-01.19.10:138][143]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (微软输入法).
+[2017.05.12-01.19.13:239][205]LogSlate: Took 0.026818 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2017.05.12-01.19.15:364][245]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-01.19.15:364][245]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-01.20.02:716][386]LogHttp:Warning: 0000019CA1E7EB00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.20.02:716][386]LogHttp:Warning: 0000019CA1E7EB00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.20.02:716][386]LogHttp:Warning: 0000019CA1E7EB00: libcurl info message cache 1 (Closing connection 38)
+[2017.05.12-01.21.02:734][981]LogHttp:Warning: 0000019C8831A980: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.21.02:734][981]LogHttp:Warning: 0000019C8831A980: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.21.02:734][981]LogHttp:Warning: 0000019C8831A980: libcurl info message cache 1 (Closing connection 39)
+[2017.05.12-01.22.53:263][778]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-01.23.02:860][ 32]LogHttp:Warning: 0000019CA1B9A500: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.23.02:860][ 32]LogHttp:Warning: 0000019CA1B9A500: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.23.02:860][ 32]LogHttp:Warning: 0000019CA1B9A500: libcurl info message cache 1 (Closing connection 40)
+[2017.05.12-01.23.05:993][107]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-01.23.06:282][107]LogSavePackage: Save=234.90ms
+[2017.05.12-01.23.06:282][107]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint9A741D2044CC5D75B3186BAC9F07D894.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-01.23.06:295][107]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-01.23.08:692][192]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.12-01.23.08:754][192]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.23.08:755][192]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.12-01.23.08:755][192]PIE: New page: PIE session: ThirdPersonExampleMap (May 11, 2017, 5:23:08 PM)
+[2017.05.12-01.23.08:755][192]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.12-01.23.08:867][192]LogPlayLevel: PIE: StaticDuplicateObject took: (0.112219s)
+[2017.05.12-01.23.08:872][192]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-01.23.08:872][192]LogPlayLevel: PIE: World Init took: (0.005064s)
+[2017.05.12-01.23.08:873][192]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.117758s)
+[2017.05.12-01.23.08:936][192]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-01.23.08:966][192]LogInit: FAudioDevice initialized.
+[2017.05.12-01.23.09:006][192]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.12-01.23.09:019][192]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.11-21.23.09
+[2017.05.12-01.23.09:020][192]LogWorld: Bringing up level for play took: 0.010957
+[2017.05.12-01.23.09:023][192]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.746
+[2017.05.12-01.23.09:024][192]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.23.24:332][ 47]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.23.24:427][ 47]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.24.08:748][377]LogHttp:Warning: 0000019C7F422800: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.24.08:748][377]LogHttp:Warning: 0000019C7F422800: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.24.08:748][377]LogHttp:Warning: 0000019C7F422800: libcurl info message cache 1 (Closing connection 41)
+[2017.05.12-01.24.58:832][671]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-01.25.16:202][109]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-01.25.29:454][445]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-01.25.29:714][445]LogSavePackage: Save=235.42ms
+[2017.05.12-01.25.29:714][445]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprintBA7F40854FD46B58CC804896CCD54511.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-01.25.29:726][445]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-01.25.31:506][508]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.12-01.25.31:556][508]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.25.31:556][508]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.12-01.25.31:556][508]PIE: New page: PIE session: ThirdPersonExampleMap (May 11, 2017, 5:25:31 PM)
+[2017.05.12-01.25.31:557][508]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.12-01.25.31:620][508]LogPlayLevel: PIE: StaticDuplicateObject took: (0.063646s)
+[2017.05.12-01.25.31:622][508]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-01.25.31:623][508]LogPlayLevel: PIE: World Init took: (0.002364s)
+[2017.05.12-01.25.31:623][508]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.066520s)
+[2017.05.12-01.25.31:683][508]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-01.25.31:707][508]LogInit: FAudioDevice initialized.
+[2017.05.12-01.25.31:746][508]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.12-01.25.31:756][508]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.11-21.25.31
+[2017.05.12-01.25.31:757][508]LogWorld: Bringing up level for play took: 0.008272
+[2017.05.12-01.25.31:759][508]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.518
+[2017.05.12-01.25.31:760][508]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.25.37:334][816]LogHttp:Warning: 0000019C8CC0AE00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.25.37:334][816]LogHttp:Warning: 0000019C8CC0AE00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.25.37:334][816]LogHttp:Warning: 0000019C8CC0AE00: libcurl info message cache 1 (Closing connection 42)
+[2017.05.12-01.25.37:982][854]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.25.38:074][854]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.25.40:392][955]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2017.05.12-01.25.48:139][284]LogEditorViewport: Clicking on Actor (LMB): LightmassImportanceVolume (LightmassImportanceVolume)
+[2017.05.12-01.25.48:967][321]LogEditorViewport: Clicking on Actor (LMB): LightmassImportanceVolume (LightmassImportanceVolume)
+[2017.05.12-01.25.51:495][427]LogEditorViewport: Clicking on Actor (LMB): Ue4ASP_Character_C (Ue4ASP_Character)
+[2017.05.12-01.25.52:277][439]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2017.05.12-01.26.03:591][823]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.12-01.26.03:637][823]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.26.03:637][823]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.12-01.26.03:637][823]PIE: New page: PIE session: ThirdPersonExampleMap (May 11, 2017, 5:26:03 PM)
+[2017.05.12-01.26.03:637][823]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.12-01.26.03:699][823]LogPlayLevel: PIE: StaticDuplicateObject took: (0.060939s)
+[2017.05.12-01.26.03:700][823]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.12-01.26.03:701][823]LogPlayLevel: PIE: World Init took: (0.001840s)
+[2017.05.12-01.26.03:701][823]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.063282s)
+[2017.05.12-01.26.03:792][823]LogInit: XAudio2 using '扬声器 (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.05.12-01.26.03:815][823]LogInit: FAudioDevice initialized.
+[2017.05.12-01.26.03:854][823]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.12-01.26.03:864][823]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.11-21.26.03
+[2017.05.12-01.26.03:865][823]LogWorld: Bringing up level for play took: 0.008256
+[2017.05.12-01.26.03:867][823]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.41
+[2017.05.12-01.26.03:867][823]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.26.11:448][247]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.26.11:656][247]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.12-01.27.02:741][433]LogHttp:Warning: 0000019C93017A00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.27.02:741][433]LogHttp:Warning: 0000019C93017A00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.27.02:741][433]LogHttp:Warning: 0000019C93017A00: libcurl info message cache 1 (Closing connection 43)
+[2017.05.12-01.27.08:252][559]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-01.27.08:490][559]LogSavePackage: Save=214.65ms
+[2017.05.12-01.27.08:490][559]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint0E89C19148A707E9D73054A4D500B921.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-01.27.08:503][559]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-01.27.56:377][627]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-01.27.57:442][639]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-01.27.57:669][639]LogSavePackage: Save=202.15ms
+[2017.05.12-01.27.57:669][639]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprintD9A86F254334473B1A01F7B2846DCF51.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-01.27.57:682][639]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-01.28.33:619][488]LogHttp:Warning: 0000019CA3BB7A00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.28.33:619][488]LogHttp:Warning: 0000019CA3BB7A00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.28.33:619][488]LogHttp:Warning: 0000019CA3BB7A00: libcurl info message cache 1 (Closing connection 44)
+[2017.05.12-01.30.02:743][639]LogHttp:Warning: 0000019C92FF9480: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.30.02:743][639]LogHttp:Warning: 0000019C92FF9480: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.30.02:743][639]LogHttp:Warning: 0000019C92FF9480: libcurl info message cache 1 (Closing connection 45)
+[2017.05.12-01.31.30:596][687]LogHttp:Warning: 0000019C3B13A800: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.31.30:597][687]LogHttp:Warning: 0000019C3B13A800: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.31.30:597][687]LogHttp:Warning: 0000019C3B13A800: libcurl info message cache 1 (Closing connection 46)
+[2017.05.12-01.33.02:761][673]LogHttp:Warning: 0000019C95FD0700: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.33.02:761][673]LogHttp:Warning: 0000019C95FD0700: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.33.02:761][673]LogHttp:Warning: 0000019C95FD0700: libcurl info message cache 1 (Closing connection 47)
+[2017.05.12-01.34.30:995][428]LogHttp:Warning: 0000019C85878580: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.34.30:995][428]LogHttp:Warning: 0000019C85878580: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.34.30:995][428]LogHttp:Warning: 0000019C85878580: libcurl info message cache 1 (Closing connection 48)
+[2017.05.12-01.36.02:746][382]LogHttp:Warning: 0000019C0FBF6200: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.36.02:746][382]LogHttp:Warning: 0000019C0FBF6200: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.36.02:746][382]LogHttp:Warning: 0000019C0FBF6200: libcurl info message cache 1 (Closing connection 49)
+[2017.05.12-01.37.02:738][683]LogHttp:Warning: 0000019C00208100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.37.02:738][683]LogHttp:Warning: 0000019C00208100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.37.02:738][683]LogHttp:Warning: 0000019C00208100: libcurl info message cache 1 (Closing connection 50)
+[2017.05.12-01.38.35:092][724]LogSavePackage: Save=428.40ms
+[2017.05.12-01.38.35:092][724]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/ThirdPersonExampleMap_Auto4194276704ACE21EA55D110B9FBB1A4A9.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto4.umap'
+[2017.05.12-01.38.35:100][724]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto4.umap
+[2017.05.12-01.38.35:114][724]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.567
+[2017.05.12-01.38.35:114][724]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.567
+[2017.05.12-01.38.35:119][724]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Mannequin/Animations/ThirdPerson_AnimBP] ([1] browsable assets)...
+[2017.05.12-01.38.35:202][724]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/Mannequin/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP]
+[2017.05.12-01.38.35:202][724]OBJ SavePackage: Finished generating thumbnails for package [/Game/Mannequin/Animations/ThirdPerson_AnimBP]
+[2017.05.12-01.38.35:346][724]LogSavePackage: Save=103.13ms
+[2017.05.12-01.38.35:346][724]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/ThirdPerson_AnimBP_Auto49B3D4E4849EC85F04C7C53B373AFF611.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/Mannequin/Animations/ThirdPerson_AnimBP_Auto4.uasset'
+[2017.05.12-01.38.35:361][724]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/Mannequin/Animations/ThirdPerson_AnimBP_Auto4.uasset
+[2017.05.12-01.38.35:365][724]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint] ([1] browsable assets)...
+[2017.05.12-01.38.35:391][724]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-01.38.35:391][724]OBJ SavePackage: Finished generating thumbnails for package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-01.38.35:645][724]LogSavePackage: Save=213.73ms
+[2017.05.12-01.38.35:645][724]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint_Auto4243940894CA52358100D0089CA6CFB1E.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto4.uasset'
+[2017.05.12-01.38.35:651][724]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto4.uasset
+[2017.05.12-01.38.35:651][724]LogFileHelpers: Auto-saving content packages took 0.535
+[2017.05.12-01.39.02:728][319]LogHttp:Warning: 0000019C919B3A00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.39.02:728][319]LogHttp:Warning: 0000019C919B3A00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.39.02:728][319]LogHttp:Warning: 0000019C919B3A00: libcurl info message cache 1 (Closing connection 51)
+[2017.05.12-01.40.02:745][669]LogHttp:Warning: 0000019C96739180: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.40.02:746][669]LogHttp:Warning: 0000019C96739180: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.40.02:746][669]LogHttp:Warning: 0000019C96739180: libcurl info message cache 1 (Closing connection 52)
+[2017.05.12-01.42.02:763][359]LogHttp:Warning: 0000019C82FEB100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.42.02:763][359]LogHttp:Warning: 0000019C82FEB100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.42.02:763][359]LogHttp:Warning: 0000019C82FEB100: libcurl info message cache 1 (Closing connection 53)
+[2017.05.12-01.44.02:747][905]LogHttp:Warning: 0000019C368B6080: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.44.02:748][905]LogHttp:Warning: 0000019C368B6080: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.44.02:748][905]LogHttp:Warning: 0000019C368B6080: libcurl info message cache 1 (Closing connection 54)
+[2017.05.12-01.45.48:738][147]LogHttp:Warning: 0000019C89A0CD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.45.48:738][147]LogHttp:Warning: 0000019C89A0CD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.45.48:738][147]LogHttp:Warning: 0000019C89A0CD00: libcurl info message cache 1 (Closing connection 55)
+[2017.05.12-01.47.02:728][714]LogHttp:Warning: 0000019CAAF6DC00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.47.02:729][714]LogHttp:Warning: 0000019CAAF6DC00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.47.02:729][714]LogHttp:Warning: 0000019CAAF6DC00: libcurl info message cache 1 (Closing connection 56)
+[2017.05.12-01.48.02:762][991]LogHttp:Warning: 0000019C1B362C80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.48.02:762][991]LogHttp:Warning: 0000019C1B362C80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.48.02:762][991]LogHttp:Warning: 0000019C1B362C80: libcurl info message cache 1 (Closing connection 57)
+[2017.05.12-01.48.55:313][ 96]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.037
+[2017.05.12-01.48.55:319][ 96]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint] ([1] browsable assets)...
+[2017.05.12-01.48.55:352][ 96]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-01.48.55:352][ 96]OBJ SavePackage: Finished generating thumbnails for package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-01.48.55:639][ 96]LogSavePackage: Save=233.47ms
+[2017.05.12-01.48.55:639][ 96]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint_Auto5175A15244517A7601D25F1927D1F8E10.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto5.uasset'
+[2017.05.12-01.48.55:644][ 96]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto5.uasset
+[2017.05.12-01.48.55:645][ 96]LogFileHelpers: Auto-saving content packages took 0.329
+[2017.05.12-01.50.02:758][481]LogHttp:Warning: 0000019C1B363700: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.50.02:758][481]LogHttp:Warning: 0000019C1B363700: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.50.02:758][481]LogHttp:Warning: 0000019C1B363700: libcurl info message cache 1 (Closing connection 58)
+[2017.05.12-01.51.54:107][747]LogHttp:Warning: 0000019C92845180: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-01.51.54:107][747]LogHttp:Warning: 0000019C92845180: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-01.51.54:107][747]LogHttp:Warning: 0000019C92845180: libcurl info message cache 1 (Closing connection 59)
+[2017.05.12-01.52.24:696][427]BlueprintLog: New page: Compile UE4ASP_HeroTPP_AnimBlueprint
+[2017.05.12-01.52.32:668][595]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mannequin/Animations/ThirdPerson_AnimBP" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Mannequin/Animations/ThirdPerson_AnimBP.uasset" SILENT=true
+[2017.05.12-01.52.32:829][595]LogSavePackage: Save=99.83ms
+[2017.05.12-01.52.32:829][595]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/ThirdPerson_AnimBPBD318F4D4C8264BD670AE8BF8EC17C1D.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Mannequin/Animations/ThirdPerson_AnimBP.uasset'
+[2017.05.12-01.52.32:855][595]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Mannequin/Animations/ThirdPerson_AnimBP.uasset
+[2017.05.12-02.43.57:766][774]LogHttp:Warning: 0000019CAE6EFD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-02.43.57:766][774]LogHttp:Warning: 0000019CAE6EFD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-02.43.57:766][774]LogHttp:Warning: 0000019CAE6EFD00: libcurl info message cache 1 (Closing connection 60)
+[2017.05.12-02.44.07:728][802]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.061
+[2017.05.12-02.44.07:733][802]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint] ([1] browsable assets)...
+[2017.05.12-02.44.07:768][802]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-02.44.07:768][802]OBJ SavePackage: Finished generating thumbnails for package [/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint]
+[2017.05.12-02.44.08:042][802]LogSavePackage: Save=229.29ms
+[2017.05.12-02.44.08:042][802]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint_Auto6694D8F814F352866A28DCCA07C2DA7A3.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto6.uasset'
+[2017.05.12-02.44.08:048][802]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Autosaves/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint_Auto6.uasset
+[2017.05.12-02.44.08:048][802]LogFileHelpers: Auto-saving content packages took 0.319
+[2017.05.12-02.45.03:239][969]LogHttp:Warning: 0000019C96D3D180: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-02.45.03:239][969]LogHttp:Warning: 0000019C96D3D180: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-02.45.03:239][969]LogHttp:Warning: 0000019C96D3D180: libcurl info message cache 1 (Closing connection 61)
+[2017.05.12-02.47.02:833][327]LogHttp:Warning: 0000019C96D3D180: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-02.47.02:833][327]LogHttp:Warning: 0000019C96D3D180: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-02.47.02:833][327]LogHttp:Warning: 0000019C96D3D180: libcurl info message cache 1 (Closing connection 62)
+[2017.05.12-02.48.03:153][507]LogHttp:Warning: 0000019C96D3D180: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-02.48.03:154][507]LogHttp:Warning: 0000019C96D3D180: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-02.48.03:154][507]LogHttp:Warning: 0000019C96D3D180: libcurl info message cache 1 (Closing connection 63)
+[2017.05.12-02.49.59:140][821]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-02.49.59:161][821]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (搜狗拼音输入法).
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: request failed, libcurl error: 7 (Couldn't connect to server)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 0 (Connection 77 seems to be dead!)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 1 (Closing connection 77)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 3 (  Trying 54.165.158.243...)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 4 (connect to 54.165.158.243 port 443 failed: Timed out)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 5 (  Trying 54.164.193.73...)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 6 (connect to 54.164.193.73 port 443 failed: Timed out)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 7 (  Trying 34.198.55.107...)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 8 (connect to 34.198.55.107 port 443 failed: Timed out)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 9 (  Trying 107.21.20.6...)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 10 (connect to 107.21.20.6 port 443 failed: Timed out)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 11 (Failed to connect to datarouter.ol.epicgames.com port 443: Timed out)
+[2017.05.12-03.31.26:855][339]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 12 (Closing connection 78)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: request failed, libcurl error: 7 (Couldn't connect to server)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 0 (  Trying 54.165.158.243...)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 1 (connect to 54.165.158.243 port 443 failed: Timed out)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 2 (  Trying 54.164.193.73...)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 3 (connect to 54.164.193.73 port 443 failed: Connection was aborted)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 4 (  Trying 34.198.55.107...)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 5 (connect to 34.198.55.107 port 443 failed: Host unreachable)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 6 (  Trying 107.21.20.6...)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 7 (connect to 107.21.20.6 port 443 failed: Host unreachable)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 8 (Failed to connect to datarouter.ol.epicgames.com port 443: Host unreachable)
+[2017.05.12-03.32.29:184][522]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 9 (Closing connection 79)
+[2017.05.12-03.33.02:952][620]LogHttp:Warning: 0000019C8A524580: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-03.33.02:952][620]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2017.05.12-03.33.02:953][620]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 1 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-03.33.02:953][620]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 2 (Closing connection 80)
+[2017.05.12-03.34.03:004][800]LogHttp:Warning: 0000019C8A524580: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-03.34.03:005][800]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-03.34.03:005][800]LogHttp:Warning: 0000019C8A524580: libcurl info message cache 1 (Closing connection 81)
+[2017.05.12-03.35.44:536][102]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-03.35.44:536][102]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-03.35.48:927][192]LogSavePackage: Save=688.49ms
+[2017.05.12-03.35.48:927][192]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/ThirdPersonExampleMap58A1688A46F8A4626C311D944E07BCEF.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2017.05.12-03.35.48:950][192]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2017.05.12-03.35.49:983][192]LogSavePackage: Save=733.70ms
+[2017.05.12-03.35.49:983][192]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/ThirdPersonExampleMap_BuiltDataE63400BD45D3684EE2F200BB27D87943.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2017.05.12-03.35.49:990][192]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset
+[2017.05.12-03.35.57:108][276]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint" FILE="C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset" SILENT=true
+[2017.05.12-03.35.57:380][276]LogSavePackage: Save=232.08ms
+[2017.05.12-03.35.57:380][276]LogSavePackage: Moving 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/UE4ASP_HeroTPP_AnimBlueprint5D2E516D45C92B0B177D1F9835EE47C2.tmp' to 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset'
+[2017.05.12-03.35.57:392][276]LogSavePackage:Display: Finished SavePackage C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/AnimStarterPack/UE4ASP_HeroTPP_AnimBlueprint.uasset
+[2017.05.12-03.35.58:361][276]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.12-03.35.58:979][277]Cmd: QUIT_EDITOR
+[2017.05.12-03.36.00:283][277]LogExit: Preparing to exit.
+[2017.05.12-03.36.01:809][277]LogExit: Editor shut down
+[2017.05.12-03.36.01:813][277]LogExit: Transaction tracking system shut down
+[2017.05.12-03.36.03:139][277]LogObj: Freed 0b from 0 cluster array pools.
+[2017.05.12-03.36.03:142][277]LogExit: Object subsystem successfully closed.
+[2017.05.12-03.36.03:216][277]LogD3D11RHI: Shutdown
+[2017.05.12-03.36.03:216][277]LogD3D11RHI: CleanupD3DDevice
+[2017.05.12-03.36.03:950][277]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.05.12-03.36.03:999][277]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (508)
+[2017.05.12-03.36.03:999][277]LogModuleManager: Shutting down and abandoning module BlueprintGraph (506)
+[2017.05.12-03.36.03:999][277]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (504)
+[2017.05.12-03.36.04:001][277]LogModuleManager: Shutting down and abandoning module SkeletonEditor (502)
+[2017.05.12-03.36.04:001][277]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (500)
+[2017.05.12-03.36.04:002][277]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.05.12-03.36.04:002][277]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.05.12-03.36.04:002][277]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.05.12-03.36.04:002][277]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.05.12-03.36.04:003][277]LogDirectoryWatcher: A directory notification for 'D:/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.05.12-03.36.04:022][277]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.05.12-03.36.04:022][277]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.05.12-03.36.04:022][277]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.05.12-03.36.04:022][277]LogDirectoryWatcher: A directory notification for 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Collections/' was aborted.
+[2017.05.12-03.36.04:022][277]LogDirectoryWatcher: A directory notification for 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/Developers/1/Collections/' was aborted.
+[2017.05.12-03.36.04:023][277]LogDirectoryWatcher: A directory notification for 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Saved/Collections/' was aborted.
+[2017.05.12-03.36.04:023][277]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.05.12-03.36.04:026][277]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.05.12-03.36.04:026][277]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.05.12-03.36.04:027][277]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.05.12-03.36.04:027][277]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.05.12-03.36.04:027][277]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.05.12-03.36.04:027][277]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.05.12-03.36.04:027][277]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.05.12-03.36.04:027][277]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.05.12-03.36.04:027][277]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.05.12-03.36.04:027][277]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.05.12-03.36.04:027][277]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.05.12-03.36.04:027][277]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.05.12-03.36.04:029][277]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.05.12-03.36.04:030][277]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.05.12-03.36.04:041][277]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.05.12-03.36.04:041][277]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.05.12-03.36.04:041][277]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.05.12-03.36.04:041][277]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.05.12-03.36.04:041][277]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.05.12-03.36.04:041][277]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.05.12-03.36.04:042][277]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.05.12-03.36.04:047][277]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.05.12-03.36.04:047][277]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.05.12-03.36.04:047][277]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.05.12-03.36.04:047][277]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.05.12-03.36.04:047][277]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.05.12-03.36.04:155][277]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.05.12-03.36.04:156][277]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.05.12-03.36.04:156][277]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.05.12-03.36.04:156][277]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.05.12-03.36.04:156][277]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.05.12-03.36.04:156][277]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.05.12-03.36.04:156][277]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.05.12-03.36.04:157][277]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.05.12-03.36.04:158][277]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.05.12-03.36.04:158][277]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.05.12-03.36.04:158][277]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.05.12-03.36.04:158][277]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.05.12-03.36.04:158][277]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.05.12-03.36.04:158][277]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.05.12-03.36.04:159][277]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.05.12-03.36.04:214][277]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.05.12-03.36.04:214][277]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.05.12-03.36.04:214][277]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.05.12-03.36.04:214][277]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.05.12-03.36.04:214][277]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.05.12-03.36.04:217][277]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.05.12-03.36.04:218][277]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.05.12-03.36.04:218][277]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.05.12-03.36.04:218][277]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.05.12-03.36.04:252][277]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.05.12-03.36.04:252][277]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.05.12-03.36.04:252][277]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.05.12-03.36.04:252][277]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.05.12-03.36.04:252][277]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.05.12-03.36.04:253][277]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.05.12-03.36.04:253][277]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.05.12-03.36.04:253][277]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.05.12-03.36.04:255][277]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.05.12-03.36.04:255][277]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.05.12-03.36.04:255][277]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.05.12-03.36.04:255][277]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.05.12-03.36.04:255][277]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.05.12-03.36.04:255][277]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.05.12-03.36.04:255][277]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.05.12-03.36.04:255][277]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.05.12-03.36.04:259][277]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.05.12-03.36.04:259][277]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.05.12-03.36.04:296][277]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.05.12-03.36.04:296][277]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.05.12-03.36.04:296][277]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.05.12-03.36.04:296][277]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.05.12-03.36.04:297][277]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.05.12-03.36.04:298][277]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.05.12-03.36.04:298][277]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.05.12-03.36.04:298][277]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.05.12-03.36.04:298][277]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.05.12-03.36.04:298][277]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.05.12-03.36.04:298][277]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.05.12-03.36.04:298][277]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.05.12-03.36.04:299][277]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.05.12-03.36.04:299][277]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.05.12-03.36.04:299][277]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.05.12-03.36.04:299][277]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.05.12-03.36.04:299][277]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.05.12-03.36.04:299][277]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.05.12-03.36.04:303][277]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.05.12-03.36.04:304][277]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.05.12-03.36.04:304][277]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.05.12-03.36.04:305][277]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.05.12-03.36.04:311][277]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.05.12-03.36.04:311][277]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.05.12-03.36.04:311][277]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.05.12-03.36.04:311][277]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.05.12-03.36.04:412][277]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.05.12-03.36.04:514][277]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.05.12-03.36.04:514][277]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.05.12-03.36.04:514][277]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.05.12-03.36.04:514][277]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.05.12-03.36.04:514][277]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.05.12-03.36.04:514][277]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.05.12-03.36.04:514][277]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.05.12-03.36.04:515][277]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.05.12-03.36.04:515][277]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.05.12-03.36.04:515][277]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.05.12-03.36.04:515][277]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.05.12-03.36.04:515][277]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.05.12-03.36.04:515][277]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.05.12-03.36.04:515][277]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.05.12-03.36.04:515][277]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.05.12-03.36.04:516][277]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.05.12-03.36.04:518][277]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.05.12-03.36.04:521][277]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.05.12-03.36.04:523][277]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.05.12-03.36.04:524][277]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.05.12-03.36.04:524][277]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.05.12-03.36.04:524][277]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.05.12-03.36.04:525][277]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.05.12-03.36.04:525][277]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.05.12-03.36.04:534][277]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.05.12-03.36.04:535][277]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.05.12-03.36.04:535][277]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.05.12-03.36.04:535][277]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.05.12-03.36.04:535][277]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.05.12-03.36.04:535][277]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.05.12-03.36.04:898][277]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.05.12-03.36.04:899][277]LogDirectoryWatcher: A directory notification for 'C:/Users/lenovo/Documents/UnrealPro/Shooter/Content/' was aborted.
+[2017.05.12-03.36.04:899][277]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.05.12-03.36.04:900][277]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.05.12-03.36.04:914][277]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.05.12-03.36.04:914][277]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.05.12-03.36.04:915][277]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.05.12-03.36.04:915][277]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.05.12-03.36.04:915][277]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.05.12-03.36.04:915][277]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.05.12-03.36.04:915][277]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.05.12-03.36.04:915][277]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.05.12-03.36.04:991][277]LogDerivedDataCache: Shutdown
+[2017.05.12-03.36.04:991][277]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.05.12-03.36.04:992][277]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.05.12-03.36.04:992][277]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.05.12-03.36.04:992][277]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.05.12-03.36.04:992][277]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.05.12-03.36.04:992][277]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.05.12-03.36.04:992][277]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.05.12-03.36.04:992][277]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.05.12-03.36.04:992][277]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.05.12-03.36.04:993][277]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.05.12-03.36.04:993][277]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.05.12-03.36.04:993][277]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.05.12-03.36.04:993][277]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.05.12-03.36.04:993][277]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.05.12-03.36.04:993][277]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.05.12-03.36.04:993][277]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.05.12-03.36.04:994][277]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.05.12-03.36.04:994][277]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.05.12-03.36.04:994][277]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.05.12-03.36.04:994][277]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.05.12-03.36.04:994][277]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.05.12-03.36.04:994][277]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.05.12-03.36.04:994][277]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.05.12-03.36.04:994][277]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.05.12-03.36.04:995][277]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.05.12-03.36.04:997][277]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.05.12-03.36.04:997][277]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.05.12-03.36.04:997][277]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.05.12-03.36.04:997][277]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.05.12-03.36.04:997][277]LogOnline:Display: Unloading online subsystem: NULL
+[2017.05.12-03.36.04:998][277]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.05.12-03.36.05:001][277]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.05.12-03.36.05:001][277]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.05.12-03.36.05:001][277]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BF589D0A9-4558-A2F9-3C40-9E89E429626C%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.2-3416026%2B%2B%2BUE4%2BRelease-4.15&UserID=fc0ab5e14c29e395dee894bb26e0e4c8%7Ccbf7e4b3a2fa4a3483ff9ae11ae13430%7C0a898179-1db4-4ad6-89ab-2983492e6393&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.12-03.36.05:001][277]LogHttp:Warning: 0000019C8539E800: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.12-03.36.05:001][277]LogHttp:Warning: 0000019C8539E800: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.12-03.36.05:001][277]LogHttp:Warning: 0000019C8539E800: libcurl info message cache 1 (Closing connection 82)
+[2017.05.12-03.36.05:025][277]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.05.12-03.36.05:030][277]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.05.12-03.36.05:032][277]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.05.12-03.36.05:034][277]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.05.12-03.36.05:034][277]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.05.12-03.36.05:034][277]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.05.12-03.36.05:109][277]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.05.12-03.36.05:110][277]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.05.12-03.36.05:110][277]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.05.12-03.36.05:112][277]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.05.12-03.36.05:112][277]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.05.12-03.36.05:112][277]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.05.12-03.36.05:112][277]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.05.12-03.36.05:113][277]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.05.12-03.36.05:114][277]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.05.12-03.36.05:114][277]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.05.12-03.36.05:123][277]LogExit: Exiting.
+[2017.05.12-03.36.05:142][277]Log file closed, 05/11/17 23:36:05
