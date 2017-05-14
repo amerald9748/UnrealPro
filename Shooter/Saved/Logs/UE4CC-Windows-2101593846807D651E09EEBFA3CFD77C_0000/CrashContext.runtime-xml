@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+	<RuntimeProperties>
+		<CrashVersion>3</CrashVersion>
+		<CrashGUID>UE4CC-Windows-2101593846807D651E09EEBFA3CFD77C_0000</CrashGUID>
+		<ProcessId>545944</ProcessId>
+		<IsInternalBuild>false</IsInternalBuild>
+		<IsPerforceBuild>false</IsPerforceBuild>
+		<IsSourceDistribution>false</IsSourceDistribution>
+		<IsEnsure>true</IsEnsure>
+		<IsAssert>false</IsAssert>
+		<CrashType>Ensure</CrashType>
+		<SecondsSinceStart>8442</SecondsSinceStart>
+		<GameName>UE4-Shooter</GameName>
+		<ExecutableName>UE4Editor</ExecutableName>
+		<BuildConfiguration>Development</BuildConfiguration>
+		<GameSessionID />
+		<PlatformName>Windows</PlatformName>
+		<PlatformNameIni>Windows</PlatformNameIni>
+		<EngineMode>Editor</EngineMode>
+		<EngineModeEx>Vanilla</EngineModeEx>
+		<DeploymentName />
+		<EngineVersion>4.15.2-3416026+++UE4+Release-4.15</EngineVersion>
+		<CommandLine>&quot;C:\Users\lenovo\Documents\UnrealPro\Shooter\Shooter.uproject&quot;</CommandLine>
+		<LanguageLCID>2052</LanguageLCID>
+		<AppDefaultLocale>zh_CN</AppDefaultLocale>
+		<BuildVersion>++UE4+Release-4.15-CL-3416026</BuildVersion>
+		<IsUE4Release>true</IsUE4Release>
+		<UserName>1</UserName>
+		<BaseDir>D:/Epic Games/UE_4.15/Engine/Binaries/Win64/</BaseDir>
+		<RootDir>D:/Epic Games/UE_4.15/</RootDir>
+		<MachineId>FC0AB5E14C29E395DEE894BB26E0E4C8</MachineId>
+		<LoginId>fc0ab5e14c29e395dee894bb26e0e4c8</LoginId>
+		<EpicAccountId>cbf7e4b3a2fa4a3483ff9ae11ae13430</EpicAccountId>
+		<CallStack />
+		<SourceContext />
+		<UserDescription>Sent in the unattended mode</UserDescription>
+		<UserActivityHint>Layout=&quot;LevelEditorToolBar&quot; Label=&quot;Toolbar&quot; Content=SHorizontalBox</UserActivityHint>
+		<ErrorMessage>Ensure condition failed: NewObject-&gt;IsA(this-&gt;GeneratedClass) [File:D:\Build\++UE4+Release-4.15+Compile\Sync\Engine\Source\Runtime\Engine\Private\Blueprint.cpp] [Line: 755] &nl;Type mismatch: Expected ThirdPersonExampleMap_C, Found REINST_ThirdPersonExampleMap_C_239&nl;</ErrorMessage>
+		<CrashDumpMode>0</CrashDumpMode>
+		<CrashReporterMessage />
+		<Misc.NumberOfCores>4</Misc.NumberOfCores>
+		<Misc.NumberOfCoresIncludingHyperthreads>4</Misc.NumberOfCoresIncludingHyperthreads>
+		<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+		<Misc.CPUVendor>AuthenticAMD</Misc.CPUVendor>
+		<Misc.CPUBrand>AMD A10-8700P Radeon R6, 10 Compute Cores 4C+6G</Misc.CPUBrand>
+		<Misc.PrimaryGPUBrand>AMD Radeon R6 Graphics</Misc.PrimaryGPUBrand>
+		<Misc.OSVersionMajor>Windows 10</Misc.OSVersionMajor>
+		<Misc.OSVersionMinor />
+		<MemoryStats.TotalPhysical>7848943616</MemoryStats.TotalPhysical>
+		<MemoryStats.TotalVirtual>140737488224256</MemoryStats.TotalVirtual>
+		<MemoryStats.PageSize>65536</MemoryStats.PageSize>
+		<MemoryStats.TotalPhysicalGB>8</MemoryStats.TotalPhysicalGB>
+		<MemoryStats.AvailablePhysical>1364430848</MemoryStats.AvailablePhysical>
+		<MemoryStats.AvailableVirtual>140733953093632</MemoryStats.AvailableVirtual>
+		<MemoryStats.UsedPhysical>1011335168</MemoryStats.UsedPhysical>
+		<MemoryStats.PeakUsedPhysical>1159872512</MemoryStats.PeakUsedPhysical>
+		<MemoryStats.UsedVirtual>2724278272</MemoryStats.UsedVirtual>
+		<MemoryStats.PeakUsedVirtual>2724278272</MemoryStats.PeakUsedVirtual>
+		<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+		<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+		<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+		<TimeOfCrash>636303310377620000</TimeOfCrash>
+		<bAllowToBeContacted>1</bAllowToBeContacted>
+		<PlatformFullName>Win64 [Windows 10  64b]</PlatformFullName>
+		<CrashReportClientVersion>1.0</CrashReportClientVersion>
+	</RuntimeProperties>
+	<PlatformProperties>
+		<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+		<PlatformCallbackResult>0</PlatformCallbackResult>
+	</PlatformProperties>
+</FGenericCrashContext>
